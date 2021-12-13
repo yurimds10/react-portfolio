@@ -8,7 +8,7 @@ import Contact from './Pages/Contact/Index';
 import Footer from './Pages/Footer/Index';
 import Scroll from './Components/Scroll';
 
-function App() {
+export default function App() {
   return (
     <div>
       <Header/>
@@ -24,5 +24,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
