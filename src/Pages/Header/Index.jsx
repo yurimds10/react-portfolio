@@ -46,6 +46,7 @@ export default function Header() {
               <i className="uil uil-apps"/>
             </NavToggle>
           </NavButtons>
+          <h1></h1>
         </NavContainer>
       </HeaderContainer>
     </div>
