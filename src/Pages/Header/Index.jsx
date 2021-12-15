@@ -1,5 +1,5 @@
 import React from "react";
-import {HeaderContainer, NavContainer, NavLogo, NavMenu, NavList, NavButtons, NavToggle} from './Style'
+import { HeaderContainer, NavContainer, NavLogo, NavMenu, NavList, NavButtons, NavToggle } from './Style'
 
 export default function Header() {
   return (
@@ -12,30 +12,39 @@ export default function Header() {
               <li>
                 <a href="#home">
                   <i className="uil uil-estate"></i>
+                  Home
                 </a>
               </li>
 
               <li>
-                <a href="#home">
+                <a href="#about">
+                  
                   <i className="uil uil-user"></i>
+                  About
                 </a>
               </li>
 
               <li>
-                <a href="#home">
+                <a href="#Skills">
+                  
                   <i className="uil uil-file"></i>
+                  Skills
                 </a>
               </li>
 
               <li>
-                <a href="#home">
+                <a href="#Portfolio">
+                  
                   <i className="uil uil-scenery"></i>
+                  Portfolio
                 </a>
               </li>
 
               <li>
-                <a href="#home">
+                <a href="#Contact">
+                   
                   <i className="uil uil-message"></i>
+                  Contact Me
                 </a>
               </li>
             </NavList>
@@ -46,7 +55,6 @@ export default function Header() {
               <i className="uil uil-apps"/>
             </NavToggle>
           </NavButtons>
-          <h1></h1>
         </NavContainer>
       </HeaderContainer>
     </div>
