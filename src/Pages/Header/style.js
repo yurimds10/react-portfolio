@@ -8,6 +8,11 @@ export const HeaderContainer = Styled.header`
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+
+  @media (min-width: 768px) {
+    top: 0;
+    bottom: initial;
+  }
 `;
 
 export const NavContainer = Styled.nav`
@@ -18,6 +23,11 @@ export const NavContainer = Styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 768px) {
+    height: calc(var(--header-height) + 1.5rem);
+    column-gap: 1rem;
+  }
 `;
 
 export const NavLogo = Styled.a`
@@ -78,5 +88,9 @@ export const NavToggle = Styled.div`
   font-weight: var(--font-medium);
   :hover {
     color: var(--first-color);
+  }
+
+  @media (min-width: 768px) {
+    display: none;
   }
 `;
