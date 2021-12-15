@@ -30,7 +30,17 @@ export const NavLogo = Styled.a`
 `;
 
 export const NavMenu = Styled.div`
-
+  @media (max-width: 767px) {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
+    order-radius: 1.5rem 1.5rem 0 0;
+    transition: .3s;
+  }
 `;
 
 export const NavList = Styled.ul`

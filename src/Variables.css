@@ -2,23 +2,22 @@
 :root {
   --header-height: 3em;
 
-  /*========== Colors ==========*/
-  /* Change favorite color */
-  --hue-color: 200; /*Puple 250 - Green 142 - Blue 230 - Pink 340*/
+  /*========== Color ==========*/
+  --hue-color: 230;
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  --title-color: hsl(var(--hue-color), 8%, 15%);
-  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
-  --input-color: hsl(var(--hue-color), 70%, 96%);
-  --body-color: hsl(var(--hue-color), 60%, 99%);
-  --scroll-bar-color: hsl(var(var(--hue-color), 12%, 90%));
-  --scroll-thumb-color: hsl(var(var(--hue-color), 12%, 80%));
-  --container-color: #fff;
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --scroll-bar-color: hsl(var(var(--hue-color), 12%, 48%));
+  --scroll-thumb-color: hsl(var(var(--hue-color), 12%, 36%));
+  --container-color: hsl(var(--hue-color), 29%, 16%);
 
   /*========== Font and typography ==========*/
   --body-font: 'Poopins', sans-serif;
@@ -36,7 +35,7 @@
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes Bottom ==========*/
+  /*========== Margins Bottom ==========*/
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px ...*/
   --mb-0-25: .25rem;
   --mb-0-50: .5rem;
@@ -89,3 +88,5 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+

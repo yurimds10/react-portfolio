@@ -1,5 +1,14 @@
 import React from "react";
-import { HeaderContainer, NavContainer, NavLogo, NavMenu, NavList, NavButtons, NavToggle } from './Style'
+import {
+  HeaderContainer,
+  NavContainer,
+  NavLogo,
+  NavMenu,
+  NavList,
+  NavButtons,
+  NavToggle
+
+} from './Style'
 
 export default function Header() {
   return (
@@ -18,7 +27,6 @@ export default function Header() {
 
               <li>
                 <a href="#about">
-                  
                   <i className="uil uil-user"></i>
                   About
                 </a>
@@ -26,7 +34,6 @@ export default function Header() {
 
               <li>
                 <a href="#Skills">
-                  
                   <i className="uil uil-file"></i>
                   Skills
                 </a>
@@ -34,7 +41,6 @@ export default function Header() {
 
               <li>
                 <a href="#Portfolio">
-                  
                   <i className="uil uil-scenery"></i>
                   Portfolio
                 </a>
@@ -42,7 +48,6 @@ export default function Header() {
 
               <li>
                 <a href="#Contact">
-                   
                   <i className="uil uil-message"></i>
                   Contact Me
                 </a>
