@@ -88,7 +88,7 @@ export const HomeButton = Styled.a`
 `;
 
 export const HomeScroll = Styled.div`
-  /*display: none;*/
+  display: none;
 `;
 
 export const HomeScrollButton = Styled.a`
