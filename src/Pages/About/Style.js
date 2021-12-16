@@ -30,3 +30,26 @@ export const AboutData = Styled.div`
     margin-bottom: var(--mb-2-5);
   }
 `;
+
+export const AboutButtons = Styled.div`
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: .75rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+
+    i {
+      font-size: 1.25rem;
+      margin-left: var(--mb-0-50);
+      transition: .3s;
+    }
+  }
+`;

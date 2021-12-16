@@ -4,6 +4,7 @@ import {
   AboutSection,
   AboutContainer,
   AboutData,
+  AboutButtons,
 } from './Style';
 
 export default function About() {
@@ -16,6 +17,10 @@ export default function About() {
 
         <AboutData>
           <p>Web developer, width extensive knowledge, delivering quality work.</p>
+
+          <AboutButtons>
+            <a download="">Download Cv <i className="uil uil-download-alt"></i></a>
+          </AboutButtons>
         </AboutData>
       </AboutContainer>
     </AboutSection>
