@@ -1,24 +1,35 @@
 import React from "react";
 
+import {
+  FooterSection,
+  FooterBackground,
+  FooterContainer,
+  FooterLinks,
+} from './Style';
+
 export default function Footer() {
   return (
-    <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
+    <FooterSection>
+      <FooterBackground>
+        <FooterContainer>
           <div>
-            <h1 class="footer__title">Yuri</h1>
-            <span class="footer__subtitle">Frontend developer</span>
+            <h1>Yuri</h1>
+            <span>Frontend developer</span>
           </div>
 
-          <ul class="footer__links">
+          <FooterLinks>
             <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
+              <a href="#portfolio">Portfolio</a>
             </li>
 
             <li>
-              <a href="#contact" class="footer__link">Contact Me</a>
+              <a href="#contact">Services</a>
             </li>
-          </ul>
+
+            <li>
+              <a href="#contact">Contact Me</a>
+            </li>
+          </FooterLinks>
 
           <div class="footer__socials">
             <a href="https://www.linkedin.com/in/yuri-ricardo-mendes-b34753214/" target="_blank" class="footer__social">
@@ -33,10 +44,10 @@ export default function Footer() {
               <i class="uil uil-instagram"></i>
             </a>
           </div>
-        </div>
+        </FooterContainer>
 
         <p class="footer__copy">&#169; Yuri Mendes. All right reserved</p>
-      </div>
-    </footer>
+      </FooterBackground>
+    </FooterSection>
   )
 }
