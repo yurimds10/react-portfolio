@@ -31,17 +31,17 @@ export const HomeSocial = Styled.div`
   a {
     font-size: 1.25rem;
     color: var(--first-color);
+
+    :hover {
+      color: var(--first-color-alt);
+    }
   }
 `;
 
 export const HomeImg = Styled.div`
   svg {
-    width: 200px;
-    fill: var(--first-color);
-
-    img {
-      width: 190px;
-    }
+    width: 250px;
+    height: 250px;
   }
 `;
 

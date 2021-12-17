@@ -5,6 +5,8 @@ import {
   FooterBackground,
   FooterContainer,
   FooterLinks,
+  FooterSocials,
+  FooterCopy
 } from './Style';
 
 export default function Footer() {
@@ -31,22 +33,22 @@ export default function Footer() {
             </li>
           </FooterLinks>
 
-          <div class="footer__socials">
-            <a href="https://www.linkedin.com/in/yuri-ricardo-mendes-b34753214/" target="_blank" class="footer__social">
+          <FooterSocials>
+            <a href="https://www.linkedin.com/in/yuri-ricardo-mendes-b34753214/" target="_blank" rel="noreferrer">
               <i class="uil uil-linkedin-alt"></i>
             </a>
 
-            <a href="https://www.github.com/YuriMendess" target="_blank" class="footer__social">
+            <a href="https://www.github.com/YuriMendess" target="_blank" rel="noreferrer">
               <i class="uil uil-github-alt"></i>
             </a>
 
-            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
               <i class="uil uil-instagram"></i>
             </a>
-          </div>
+          </FooterSocials>
         </FooterContainer>
 
-        <p class="footer__copy">&#169; Yuri Mendes. All right reserved</p>
+        <FooterCopy>&#169; Yuri Mendes. All right reserved</FooterCopy>
       </FooterBackground>
     </FooterSection>
   )

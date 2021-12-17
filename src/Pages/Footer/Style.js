@@ -45,5 +45,20 @@ export const FooterLinks = Styled.ul`
 `;
 
 export const FooterSocials = Styled.div`
+  a {
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+    color: #FFF;
 
+    :hover {
+      color: var(--first-color-lighter);
+    }
+  }
+`;
+
+export const FooterCopy = Styled.p`
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: #FFF;
+  margin-top: var(--mb-3);
 `;
