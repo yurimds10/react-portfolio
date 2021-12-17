@@ -78,6 +78,9 @@ export const HomeButton = Styled.a`
 
   :hover {
     background-color: var(--first-color-alt);
+    i {
+      transform: translateX(.25rem);
+    }
   }
 
   i {

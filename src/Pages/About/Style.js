@@ -46,6 +46,15 @@ export const AboutButtons = Styled.div`
     display: inline-flex;
     align-items: center;
 
+    :hover {
+      cursor: pointer;
+      background-color: var(--first-color-alt);
+
+      i {
+        transform: translateY(.25rem);
+      }
+    }
+
     i {
       font-size: 1.25rem;
       margin-left: var(--mb-0-50);

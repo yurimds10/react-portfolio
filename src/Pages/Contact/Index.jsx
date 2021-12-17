@@ -1,64 +1,75 @@
 import React from "react";
 
+import {
+  ContactSection,
+  ContactContainer,
+  ContactInformation,
+  ContactForm,
+  ContactInputs,
+  ContactContent,
+  ContactLabel,
+  ContactInput,
+  ContactTextArea,
+  ContactButton,
+} from './Style'
+
 export default function Contact() {
   return (
-    <section class="contact section" id="contact">
-      <h2 class="section__title">Contact Me</h2>
-      <span class="section__subtitle">Get in touch</span>
-                
-
-      <div class="contact__container container grid">
+    <ContactSection id="contact">
+      <h2>Contact Me</h2>
+      <span>Get in touch</span>
+      <ContactContainer>
         <div>
-          <div class="contact__information">
-            <i class="uil uil-phone contact__icon"></i>
+          <ContactInformation>
+            <i class="uil uil-phone"></i>
     
             <div>
-              <h3 class="contact__title">Telegram</h3>
-              <span class="contact__subtitle">+55 (15) 9-9637-8881</span>
+              <h3>Telegram</h3>
+              <span>+55 (15) 99637-8881</span>
             </div>
-          </div>
+          </ContactInformation>
     
-          <div class="contact__information">
-            <i class="uil uil-envelope contact__icon"></i>
+          <ContactInformation>
+            <i class="uil uil-envelope"></i>
     
             <div>
-              <h3 class="contact__title">Email</h3>
-              <span class="contact__subtitle">contato.yurimendess@gmail.com</span>
+              <h3>Email</h3>
+              <span>contato.yurimendess@gmail.com</span>
             </div>
-          </div>
+          </ContactInformation>
         </div>
                      
-        <form action="" class="contact__form grid">
-          <div class="contact__inputs grid">
-            <div class="contact__content">
-              <label for="" class="contact__label">Name</label>
-              <input type="text" class="contact__input"/>
-            </div>
+        <ContactForm action="">
+          <ContactInputs>
+            <ContactContent>
+              <ContactLabel for="">Name</ContactLabel>
+              <ContactInput type="text"/>
+            </ContactContent>
 
-            <div class="contact__content">
-              <label for="" class="contact__label">Email</label>
-              <input type="email" class="contact__input"/>
-            </div>
+            <ContactContent>
+              <ContactLabel for="">Email</ContactLabel>
+              <ContactInput type="email"/>
+            </ContactContent>
 
-            <div class="contact__content">
-              <label for="" class="contact__label">Project</label>
-              <input type="text" class="contact__input"/>
-            </div>
+            <ContactContent>
+              <ContactLabel for="">Project</ContactLabel>
+              <ContactInput type="text"/>
+            </ContactContent>
 
-            <div class="contact__content">
-              <label for="" class="contact__label">Message</label>
-              <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
-            </div>
+            <ContactContent>
+              <ContactLabel for="">Message</ContactLabel>
+              <ContactTextArea name="" id="" cols="0" rows="7"></ContactTextArea>
+            </ContactContent>
 
             <div>
-              <a href="#" class="button button--flex contact__button">
+              <ContactButton>
                 Send Message
-                <i class="uil uil-message button__icon"></i>
-              </a>
+                <i class="uil uil-message"></i>
+              </ContactButton>
             </div>
-          </div>
-        </form>
-      </div>
-    </section>
+          </ContactInputs>
+        </ContactForm>
+      </ContactContainer>
+    </ContactSection>
   )
 }
