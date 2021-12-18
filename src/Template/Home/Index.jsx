@@ -44,7 +44,7 @@ export default function Home() {
             <HomeDescription>
               High level experience in web design and development knowledge, producing quality work.
             </HomeDescription>
-            <HomeButton>
+            <HomeButton href="#contact">
               Contact Me <i className="uil uil-message"/>
             </HomeButton>
           </HomeData>
