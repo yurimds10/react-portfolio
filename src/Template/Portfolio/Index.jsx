@@ -1,4 +1,7 @@
 import React from "react";
+import PortfolioImg1 from '../../Assets/Img/portfolio1.jpg';
+import PortfolioImg2 from '../../Assets/Img/portfolio2.jpg';
+import PortfolioImg3 from '../../Assets/Img/portfolio3.jpg';
 
 import {
   PortfolioSection,
@@ -17,7 +20,7 @@ export default function Portfolio() {
         <div className="swiper-wrapper">
           {/* <!--==================== PORTFOLIO 1 ====================--> */}
           <PortfolioContent className="swiper-slide">
-            <img src="" alt="portfolio 1"/>
+            <img src={PortfolioImg1} alt="portfolio 1"/>
 
             <PortfolioData>
               <h3>Modern Website</h3>
@@ -33,7 +36,7 @@ export default function Portfolio() {
 
           {/* <!--==================== PORTFOLIO 2 ====================--> */}
           <PortfolioContent className="swiper-slide">
-            <img src="" alt="portfolio 2"/>
+            <img src={PortfolioImg2} alt="portfolio 2"/>
                         
 
             <PortfolioData>
@@ -50,7 +53,7 @@ export default function Portfolio() {
 
           {/* <!--==================== PORTFOLIO 3 ====================--> */}
           <PortfolioContent className="swiper-slide">
-            <img src="" alt="portfolio 3"/>
+            <img src={PortfolioImg3} alt="portfolio 3"/>
                         
 
             <PortfolioData>
