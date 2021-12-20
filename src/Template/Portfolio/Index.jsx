@@ -6,8 +6,11 @@ import PortfolioImg3 from '../../Assets/Img/portfolio3.jpg';
 import {
   PortfolioSection,
   PortfolioContainer,
+  PortfolioCarousel,
   PortfolioContent,
   PortfolioData,
+  ButtonCarousel,
+  CarouselPortfolioIcon,
 } from './Style';
 
 export default function Portfolio() {
@@ -16,10 +19,10 @@ export default function Portfolio() {
       <h2>Portfolio</h2>
       <span>Most recent work</span>
 
-      <PortfolioContainer className="swiper-container">
-        <div className="swiper-wrapper">
+      <PortfolioContainer>
+        <PortfolioCarousel>
           {/* <!--==================== PORTFOLIO 1 ====================--> */}
-          <PortfolioContent className="swiper-slide">
+          <PortfolioContent>
             <img src={PortfolioImg1} alt="portfolio 1"/>
 
             <PortfolioData>
@@ -35,7 +38,7 @@ export default function Portfolio() {
           </PortfolioContent>
 
           {/* <!--==================== PORTFOLIO 2 ====================--> */}
-          <PortfolioContent className="swiper-slide">
+          <PortfolioContent>
             <img src={PortfolioImg2} alt="portfolio 2"/>
                         
 
@@ -52,7 +55,7 @@ export default function Portfolio() {
           </PortfolioContent>
 
           {/* <!--==================== PORTFOLIO 3 ====================--> */}
-          <PortfolioContent className="swiper-slide">
+          <PortfolioContent>
             <img src={PortfolioImg3} alt="portfolio 3"/>
                         
 
@@ -67,18 +70,16 @@ export default function Portfolio() {
               </a>
             </PortfolioData>
           </PortfolioContent>
-        </div>
+        </PortfolioCarousel>
 
         {/* <!-- Add Arrows --> */}
-        <div className="swiper-button-next">
-          <i className="uil uil-angle-right-b swiper-portfolio-icon"></i>
-        </div>
-        <div className="swiper-button-prev">
-          <i className="uil uil-angle-left-b swiper-portfolio-icon"></i>
-        </div>
+        <ButtonCarousel>
+          <CarouselPortfolioIcon className="uil uil-angle-left-b"></CarouselPortfolioIcon>
+        </ButtonCarousel>
 
-        {/* <!-- Add Pagination --> */}
-        <div className="swiper-pagination"></div>
+        <ButtonCarousel>
+          <CarouselPortfolioIcon className="uil uil-angle-right-b"></CarouselPortfolioIcon>
+        </ButtonCarousel>
       </PortfolioContainer>
     </PortfolioSection>
   );

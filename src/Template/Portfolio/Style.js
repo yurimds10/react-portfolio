@@ -24,7 +24,15 @@ export const PortfolioContainer = Styled.div`
   overflow: initial;
 `;
 
+export const PortfolioCarousel = Styled.div`
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+`;
+
 export const PortfolioContent = Styled.div`
+  margin-right: 2rem;
   padding: 0 1.5rem;
   display: grid;
   gap: 1.5rem;
@@ -64,4 +72,15 @@ export const PortfolioData = Styled.div`
       }
     }
   }
+`;
+
+export const ButtonCarousel = Styled.button`
+  background-color: transparent;
+  border: none;
+`;
+
+export const CarouselPortfolioIcon = Styled.i`
+  font-size: 2rem;
+  color: var(--first-color);
+  cursor: pointer;
 `;

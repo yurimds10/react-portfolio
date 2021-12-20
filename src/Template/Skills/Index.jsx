@@ -2,51 +2,91 @@ import React from "react";
 
 import{
   SkillsSection,
+  SkillsSectionTitle,
+  SkillsSectionSubtitle,
+  SkillsTitle,
+  SkillsSubtitle,
   SkillsContainer,
   SkillsHeader,
+  SkillsIcon,
+  SkillsArrow,
   SkillsList,
   SkillsData,
   SkillsTitles,
+  SkillsBar,
 } from './Style'
 
 
 export default function Skills() {
   return (
     <SkillsSection>
-      <h2>Skills</h2>
-      <span>My technical level</span>
+      <SkillsSectionTitle>Skills</SkillsSectionTitle>
+      <SkillsSectionSubtitle>My technical level</SkillsSectionSubtitle>
       <SkillsContainer>
-        <SkillsHeader>
-          <i className="uil uil-brackets-curly skills-icon"></i>
+        <SkillsHeader onClick={() => console.log(`Skills button ok!`)}>
+          <SkillsIcon className="uil uil-brackets-curly"></SkillsIcon>
           <div>
-            <h1>Frontend developer</h1>
-            <span>More than 4 years</span>
+            <SkillsTitle>Frontend developer</SkillsTitle>
+            <SkillsSubtitle>More than 4 years</SkillsSubtitle>
           </div>
-          <i className="uil uil-angle-down skills-arrow"></i>
+          <SkillsArrow className="uil uil-angle-down"></SkillsArrow>
         </SkillsHeader>
+        
         <SkillsList>
+          
           <SkillsData>
             <SkillsTitles>
               <h3>HTML 5</h3>
+              <span>90%</span>
             </SkillsTitles>
+
+            <SkillsBar>
+              <span class="skills__percentage skills__css"></span>
+            </SkillsBar>
           </SkillsData>
           
           <SkillsData>
             <SkillsTitles>
               <h3>CSS 3</h3>
+              <span>90%</span>
             </SkillsTitles>
+
+            <SkillsBar>
+              <span></span>
+            </SkillsBar>
           </SkillsData>
 
           <SkillsData>
             <SkillsTitles>
               <h3>JavaScript</h3>
+              <span>90%</span>
             </SkillsTitles>
+
+            <SkillsBar>
+              <span></span>
+            </SkillsBar>
+          </SkillsData>
+
+          <SkillsData>
+            <SkillsTitles>
+              <h3>TypeScript</h3>
+              <span>90%</span>
+            </SkillsTitles>
+
+            <SkillsBar>
+              <span></span>
+            </SkillsBar>
           </SkillsData>
 
           <SkillsData>
             <SkillsTitles>
               <h3>React JS</h3>
+              <span>90%</span>
             </SkillsTitles>
+
+            <SkillsBar>
+              <span></span>
+            </SkillsBar>
           </SkillsData>
         </SkillsList>
       </SkillsContainer>
