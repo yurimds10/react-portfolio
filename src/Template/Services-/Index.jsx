@@ -29,7 +29,7 @@ export default function Services() {
             <ServicesTitle>Frontend <br/> Developer</ServicesTitle>
           </div>
 
-          <ServicesButton onCLick="">
+          <ServicesButton onClick={() => console.log(`Services Section ok!`)}>
             View More
             <i className="uil uil-arrow-right"></i>
           </ServicesButton>

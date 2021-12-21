@@ -28,6 +28,11 @@ export const FooterContainer = Styled.div`
     font-size: var(--small-font-size);
     color: #FFF;
   }
+
+  @media (max-width: 350px) {
+    margin-right: var(--mb-1);
+    margin-left: var(--mb-1);
+  }
 `;
 
 export const FooterLinks = Styled.ul`

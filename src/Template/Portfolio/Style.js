@@ -22,6 +22,11 @@ export const PortfolioContainer = Styled.div`
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
   overflow: initial;
+
+  @media (max-width: 350px) {
+    margin-right: var(--mb-1);
+    margin-left: var(--mb-1);
+  }
 `;
 
 export const PortfolioCarousel = Styled.div`

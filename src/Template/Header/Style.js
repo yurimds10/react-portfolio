@@ -24,6 +24,12 @@ export const NavContainer = Styled.nav`
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: 350px) {
+    margin-right: var(--mb-1);
+    margin-left: var(--mb-1);
+  }
+
+
   @media (min-width: 768px) {
     height: calc(var(--header-height) + 1.5rem);
     column-gap: 1rem;
@@ -40,6 +46,10 @@ export const NavLogo = Styled.a`
 `;
 
 export const NavMenu = Styled.div`
+  @media (max-width: 350px) {
+    padding: 2rem .25rem 4rem;
+  }
+
   @media (max-width: 767px) {
     position: fixed;
     bottom: -100%;
@@ -74,6 +84,10 @@ export const NavList = Styled.ul`
     i {
       font-size: 1.2rem;
     }
+  }
+
+  @media (max-width: 350px) {
+    column-gap: 0;
   }
 `;
 

@@ -22,6 +22,11 @@ export const ServicesContainer = Styled.div`
   margin-right: var(--mb-1-5);
   display: flex;
   justify-content: center;
+
+  @media (max-width: 350px) {
+    margin-right: var(--mb-1);
+    margin-left: var(--mb-1);
+  }
 `;
 
 export const ServicesContent = Styled.div`

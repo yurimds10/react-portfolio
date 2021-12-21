@@ -73,11 +73,11 @@ export default function Portfolio() {
         </PortfolioCarousel>
 
         {/* <!-- Add Arrows --> */}
-        <ButtonCarousel>
+        <ButtonCarousel onClick={() => console.log(`left`)}>
           <CarouselPortfolioIcon className="uil uil-angle-left-b"></CarouselPortfolioIcon>
         </ButtonCarousel>
 
-        <ButtonCarousel>
+        <ButtonCarousel onClick={() => console.log(`right`)}>
           <CarouselPortfolioIcon className="uil uil-angle-right-b"></CarouselPortfolioIcon>
         </ButtonCarousel>
       </PortfolioContainer>

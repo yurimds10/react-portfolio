@@ -19,9 +19,13 @@ export const ContactContainer= Styled.div`
   max-width: 768px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
-
   display: grid;
-    gap: 1.5rem;
+  gap: 1.5rem;
+  
+  @media (max-width: 350px) {
+    margin-right: var(--mb-1);
+    margin-left: var(--mb-1);
+  }
 `;
 
 export const ContactInformation = Styled.div`

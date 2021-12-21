@@ -22,6 +22,11 @@ export const AboutContainer = Styled.div`
   margin-right: var(--mb-1-5);
   display: grid;
   gap: 1.5rem;
+
+  @media (max-width: 350px) {
+    margin-right: var(--mb-1);
+    margin-left: var(--mb-1);
+  }
 `;
 
 export const AboutData = Styled.div`
