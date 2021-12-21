@@ -1,7 +1,7 @@
 import Styled from 'styled-components';
 import VariablesCSS from '../../Variables.css';
 
-export const HeaderContainer = Styled.header`
+export const HeaderSection = Styled.header`
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -12,6 +12,11 @@ export const HeaderContainer = Styled.header`
   @media (min-width: 768px) {
     top: 0;
     bottom: initial;
+    padding: 0 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0;
   }
 `;
 
@@ -33,6 +38,8 @@ export const NavContainer = Styled.nav`
   @media (min-width: 768px) {
     height: calc(var(--header-height) + 1.5rem);
     column-gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
@@ -50,6 +57,10 @@ export const NavMenu = Styled.div`
     padding: 2rem .25rem 4rem;
   }
 
+  @media (max-width: 350px) {
+    padding: 2rem .25rem 4rem;
+  }
+
   @media (max-width: 767px) {
     position: fixed;
     bottom: -100%;
@@ -61,33 +72,59 @@ export const NavMenu = Styled.div`
     order-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
   }
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+  }
 `;
 
 export const NavList = Styled.ul`
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  
+  gap: 2rem; 
   display: grid;
   gap: 1.5rem;
-  
-  a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: var(--small-font-size);
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    :hover {
-      color: var(--first-color);
-    }
-
-    i {
-      font-size: 1.2rem;
-    }
-  }
 
   @media (max-width: 350px) {
     column-gap: 0;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    column-gap: 2rem;
+  }
+`;
+
+export const NavLink = Styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+
+  :hover {
+    color: var(--first-color);
+  }
+`;
+
+export const NavIcon = Styled.i`
+  font-size: 1.2rem;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+
+export const NavClose = Styled.i`
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+
+  @media (min-width: 768px) {
+    display: none;
   }
 `;
 

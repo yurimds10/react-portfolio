@@ -11,6 +11,10 @@ export const ContactSection = Styled.section`
     text-align: center;
     display: block;
   }
+
+  @media (min-width: 768px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const ContactContainer= Styled.div`
@@ -25,6 +29,15 @@ export const ContactContainer= Styled.div`
   @media (max-width: 350px) {
     margin-right: var(--mb-1);
     margin-left: var(--mb-1);
+  }
+
+  @media (min-width: 568px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 

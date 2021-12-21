@@ -4,6 +4,10 @@ import VariablesCSS from '../../Variables.css';
 export const SkillsSection = Styled.section`
   margin-top: 3rem;
   padding: 2rem 0 4rem;
+
+  @media (min-width: 768px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const SkillsSectionTitle = Styled.h2`
@@ -16,6 +20,10 @@ export const SkillsSectionSubtitle = Styled.span`
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
+
+  @media (min-width: 768px) {
+    margin-bottom: 4rem;
+  }
 `;
 
 export const SkillsContainer = Styled.div`
@@ -29,6 +37,11 @@ export const SkillsContainer = Styled.div`
   @media (max-width: 350px) {
     margin-right: var(--mb-1);
     margin-left: var(--mb-1);
+  }
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
@@ -51,6 +64,10 @@ export const SkillsIcon = Styled.i`
 
 export const SkillsTitle = Styled.h1`
   font-size: var(--h3-font-size);
+
+  @media (max-width: 350px) {
+    font-size: var(--normal-font-size);
+  }
 `;
 
 export const SkillsSubtitle = Styled.span`

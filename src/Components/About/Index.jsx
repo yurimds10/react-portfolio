@@ -9,7 +9,7 @@ import {
 
 export default function About() {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <h2>About Me</h2>
       <span>My Introduction</span>
       <AboutContainer>

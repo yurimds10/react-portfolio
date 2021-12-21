@@ -14,6 +14,10 @@ export const AboutSection = Styled.section`
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
   }
+
+  @media (min-width: 768px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const AboutContainer = Styled.div`
@@ -26,6 +30,12 @@ export const AboutContainer = Styled.div`
   @media (max-width: 350px) {
     margin-right: var(--mb-1);
     margin-left: var(--mb-1);
+  }
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 5rem;
   }
 `;
 
@@ -66,4 +76,5 @@ export const AboutButtons = Styled.div`
       transition: .3s;
     }
   }
+
 `;

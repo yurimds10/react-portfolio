@@ -15,6 +15,10 @@ export const PortfolioSection = Styled.section`
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
   }
+
+  @media (min-width: 768px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const PortfolioContainer = Styled.div`
@@ -26,6 +30,15 @@ export const PortfolioContainer = Styled.div`
   @media (max-width: 350px) {
     margin-right: var(--mb-1);
     margin-left: var(--mb-1);
+  }
+
+  @media (min-width: 568px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
@@ -41,6 +54,14 @@ export const PortfolioContent = Styled.div`
   padding: 0 1.5rem;
   display: grid;
   gap: 1.5rem;
+
+  @media (min-width: 768px) {
+    align-items: center;
+  }
+
+  @media (min-width: 1024px) {
+    column-gap: 5rem;
+  }
 `;
 
 export const PortfolioData = Styled.div`

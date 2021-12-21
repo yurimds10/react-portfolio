@@ -18,7 +18,7 @@ import {
 
 export default function Home() {
   return (
-    <HomeSection>
+    <HomeSection id="home">
       <HomeContainer>
         <HomeContent>
           <HomeSocial>

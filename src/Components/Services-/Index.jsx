@@ -18,7 +18,7 @@ import {
 
 export default function Services() {
   return (
-    <ServicesSection>
+    <ServicesSection id="services">
       <h2>Services</h2>
       <span>What I offer</span>
       <ServicesContainer>

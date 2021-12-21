@@ -3,6 +3,10 @@ import VariablesCSS from '../../Variables.css';
 
 export const HomeSection = Styled.section`
   padding: 2rem 0 4rem;
+
+  @media (min-width: 768px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const HomeContainer = Styled.div`
@@ -17,6 +21,12 @@ export const HomeContainer = Styled.div`
     margin-right: var(--mb-1);
     margin-left: var(--mb-1);
   }
+
+  @media (min-width: 768px) {
+    row-gap: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const HomeContent = Styled.div`
@@ -26,6 +36,18 @@ export const HomeContent = Styled.div`
   display: grid;
   gap: 1.5rem;
 
+  @media (max-width: 350px) {
+    grid-template-columns: .25fr 3fr;
+  }
+
+  @media (min-width: 568px) {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+  }
 `;
 
 export const HomeSocial = Styled.div`
@@ -41,17 +63,58 @@ export const HomeSocial = Styled.div`
       color: var(--first-color-alt);
     }
   }
+
+  @media (min-width: 1024px) {
+    transform: translateX(-6rem);
+  }
 `;
 
 export const HomeImg = Styled.div`
   svg {
     width: 250px;
     height: 200px;
+    transition: .8s;
+  }
+
+  :hover {
+    svg {
+      transition: .8s;
+      width: 270px;
+      height: 200px;
+      transition: .8s;
+    }
+    
+  }
+
+  @media (min-width: 568px) {
+    order: 1;
+    justify-self: center;
+  }
+
+  @media (min-width: 1024px) {
+    svg {
+    width: 350px;
+    height: 300px;
+    transition: .8s;
+    }
+
+    :hover {
+      svg {
+        transition: .8s;
+        width: 370px;
+        height: 310px;
+        transition: .8s;
+      }
+    }
   }
 `;
 
 export const HomeData = Styled.div`
   grid-column: 1/3;
+
+  @media (min-width: 568px) {
+    grid-column: initial;
+  }
 `;
 
 export const HomeTitle = Styled.h1`
@@ -97,6 +160,10 @@ export const HomeButton = Styled.a`
 
 export const HomeScroll = Styled.div`
   display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 `;
 
 export const HomeScrollButton = Styled.a`
@@ -124,5 +191,9 @@ export const HomeScrollButton = Styled.a`
 
   .arrow {
     font-size: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 3rem;
   }
 `;

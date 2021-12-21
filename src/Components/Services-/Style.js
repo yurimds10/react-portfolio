@@ -14,6 +14,10 @@ export const ServicesSection = Styled.section`
     margin-bottom: var(--mb-3);
     text-align: center;
   }
+
+  @media (min-width: 768px) {
+    padding: 6rem 0 2rem;
+  }
 `;
 
 export const ServicesContainer = Styled.div`
@@ -26,6 +30,17 @@ export const ServicesContainer = Styled.div`
   @media (max-width: 350px) {
     margin-right: var(--mb-1);
     margin-left: var(--mb-1);
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 218px);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 238px);
   }
 `;
 
@@ -41,6 +56,14 @@ export const ServicesContent = Styled.div`
   :hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
   }
+
+  @media (max-width: 350px) {
+    padding-right: 3.5rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 6rem 0 2rem 2.5rem;
+  }
 `;
 
 export const ServicesIcon = Styled.i`
@@ -48,6 +71,10 @@ export const ServicesIcon = Styled.i`
   font-size: 1.5rem;
   color: var(--first-color);
   margin-bottom: var(--mb-1);
+
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export const ServicesTitle = Styled.h3`
@@ -95,6 +122,10 @@ export const ServicesModal = Styled.div`
   opacity: 0;
   visibility: hidden;
   transition: .3s;
+
+  @media (max-width: 350px) {
+    padding: 0 .5rem;
+  }
 `;
 
 export const ServicesModalContent = Styled.div`
@@ -102,6 +133,10 @@ export const ServicesModalContent = Styled.div`
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: .5rem;
+
+  @media (min-width: 768px) {
+    width: 450px;
+  }
 `;
 
 export const ServicesModalTitle = Styled.h4`

@@ -19,7 +19,7 @@ import{
 
 export default function Skills() {
   return (
-    <SkillsSection>
+    <SkillsSection id="skills">
       <SkillsSectionTitle>Skills</SkillsSectionTitle>
       <SkillsSectionSubtitle>My technical level</SkillsSectionSubtitle>
       <SkillsContainer>
