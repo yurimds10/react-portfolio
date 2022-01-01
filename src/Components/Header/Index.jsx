@@ -1,20 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   HeaderSection,
-  HeaderContainer,
   NavContainer,
   NavLogo,
   NavMenu,
   NavList,
   NavLink,
   NavIcon,
+  NavCloseButton,
   NavClose,
   NavButtons,
   NavToggle
-
-} from './Style'
+} from './Style';
 
 export default function Header() {
+
   return (
     <HeaderSection id="header">     
       <NavContainer>
@@ -63,10 +63,12 @@ export default function Header() {
               </NavLink>
             </li>
           </NavList>
-          <NavClose className="uil uil-times" id="nav-close"/>
+          <NavCloseButton onClick={() => false}>
+            <NavClose className="uil uil-times"/>
+          </NavCloseButton>
         </NavMenu>
         <NavButtons>
-            <NavToggle onClick={() => console.log(`header button`)}>
+            <NavToggle onClick={() => true}>
               <i className="uil uil-apps"/>
             </NavToggle>
         </NavButtons>

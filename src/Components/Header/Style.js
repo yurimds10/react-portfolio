@@ -1,13 +1,24 @@
 import Styled from 'styled-components';
-import VariablesCSS from '../../Variables.css';
+import {
+  body_color,
+  first_color,
+  font_medium,
+  small_font_size,
+  header_height,
+  mb_1,
+  mb_1_5,
+  title_color,
+  z_fixed,
+
+} from '../../Styles/Variables';
 
 export const HeaderSection = Styled.header`
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  z-index: ${z_fixed};
+  background-color: ${body_color};
 
   @media (min-width: 768px) {
     top: 0;
@@ -22,21 +33,21 @@ export const HeaderSection = Styled.header`
 
 export const NavContainer = Styled.nav`
   max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
-  height: var(--header-height);
+  margin-left: ${mb_1_5};
+  margin-right: ${mb_1_5};
+  height: $${header_height};
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (max-width: 350px) {
-    margin-right: var(--mb-1);
-    margin-left: var(--mb-1);
+    margin-right: ${mb_1};
+    margin-left: ${mb_1};
   }
 
 
   @media (min-width: 768px) {
-    height: calc(var(--header-height) + 1.5rem);
+    height: ${header_height} + 1.5rem;
     column-gap: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -44,13 +55,16 @@ export const NavContainer = Styled.nav`
 `;
 
 export const NavLogo = Styled.a`
-  color: var(--title-color);
-  font-weight: var(--font-medium);
+  color: $${title_color};
+  font-weight: ${font_medium};
   cursor: pointer;
   :hover {
-    color: var(--first-color);
+    color: ${first_color};
   }
 `;
+
+const open = 0;
+const close = -100000;
 
 export const NavMenu = Styled.div`
   @media (max-width: 350px) {
@@ -66,7 +80,7 @@ export const NavMenu = Styled.div`
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
+    background-color: ${body_color};
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     order-radius: 1.5rem 1.5rem 0 0;
@@ -98,12 +112,12 @@ export const NavLink = Styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: var(--small-font-size);
-  color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-size: ${small_font_size};
+  color: ${title_color};
+  font-weight: ${font_medium};
 
   :hover {
-    color: var(--first-color);
+    color: ${first_color};
   }
 `;
 
@@ -115,13 +129,18 @@ export const NavIcon = Styled.i`
   }
 `;
 
+export const NavCloseButton = Styled.button`
+  border: none;
+  background-color: transparent;
+`;
+
 export const NavClose = Styled.i`
   position: absolute;
   right: 1.3rem;
   bottom: 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  color: var(--first-color);
+  color: ${first_color};
 
   @media (min-width: 768px) {
     display: none;
@@ -135,10 +154,10 @@ export const NavButtons = Styled.div`
 export const NavToggle = Styled.div`
   font-size: 1.1rem;
   cursor: pointer;
-  color: var(--title-color);
-  font-weight: var(--font-medium);
+  color: ${title_color};
+  font-weight: ${font_medium};
   :hover {
-    color: var(--first-color);
+    color: ${first_color};
   }
 
   @media (min-width: 768px) {

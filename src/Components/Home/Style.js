@@ -1,10 +1,25 @@
 import Styled from 'styled-components';
-import VariablesCSS from '../../Variables.css';
+import {
+  big_font_size,
+  first_color,
+  first_color_alt,
+  font_medium,
+  h3_font_size,
+  mb_0_25,
+  mb_0_50,
+  mb_0_75,
+  mb_1,
+  mb_1_5,
+  small_font_size,
+  text_color,
+  title_color
+
+} from '../../Styles/Variables';
 
 export const HomeSection = Styled.section`
   padding: 2rem 0 4rem;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding: 6rem 0 2rem;
   }
 `;
@@ -12,17 +27,17 @@ export const HomeSection = Styled.section`
 export const HomeContainer = Styled.div`
   gap: 1rem;
   max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-left: ${mb_1_5};
+  margin-right: ${mb_1_5};
   display: grid;
   gap: 1.5rem;
 
-  @media (max-width: 350px) {
-    margin-right: var(--mb-1);
-    margin-left: var(--mb-1);
+  @media screen and (max-width: 350px) {
+    margin-right: ${mb_1};
+    margin-left: ${mb_1};
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     row-gap: 5rem;
     margin-left: auto;
     margin-right: auto;
@@ -36,11 +51,11 @@ export const HomeContent = Styled.div`
   display: grid;
   gap: 1.5rem;
 
-  @media (max-width: 350px) {
+  @media screen and (max-width: 350px) {
     grid-template-columns: .25fr 3fr;
   }
 
-  @media (min-width: 568px) {
+  @media screen and (min-width: 568px) {
     grid-template-columns: max-content 1fr 1fr;
   }
 
@@ -57,41 +72,41 @@ export const HomeSocial = Styled.div`
 
   a {
     font-size: 1.25rem;
-    color: var(--first-color);
+    color: ${first_color};
 
     :hover {
-      color: var(--first-color-alt);
+      color: ${first_color_alt};
     }
   }
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     transform: translateX(-6rem);
   }
 `;
 
 export const HomeImg = Styled.div`
+
   svg {
     width: 250px;
-    height: 200px;
+    height: 250px;
     transition: .8s;
   }
 
-  :hover {
-    svg {
-      transition: .8s;
-      width: 270px;
-      height: 200px;
-      transition: .8s;
-    }
-    
-  }
-
-  @media (min-width: 568px) {
+  @media screen and (min-width: 568px) {
     order: 1;
     justify-self: center;
   }
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+    height: 400px;
+
     svg {
     width: 350px;
     height: 300px;
@@ -112,20 +127,20 @@ export const HomeImg = Styled.div`
 export const HomeData = Styled.div`
   grid-column: 1/3;
 
-  @media (min-width: 568px) {
+  @media screen and (min-width: 568px) {
     grid-column: initial;
   }
 `;
 
 export const HomeTitle = Styled.h1`
-  font-size: var(--big-font-size);
+  font-size: ${big_font_size};
 `;
 
 export const HomeSubtitle = Styled.h3`
-  font-size: var(--h3-font-size);
-  color: var(--text-color);
-  font-weight: var(--font-medium);
-  margin-bottom: var(--mb-0-75);
+  font-size: ${h3_font_size};
+  color: ${text_color};
+  font-weight: ${font_medium};
+  margin-bottom: ${mb_0_75};
 `;
 
 export const HomeDescription = Styled.p`
@@ -134,18 +149,18 @@ export const HomeDescription = Styled.p`
 
 export const HomeButton = Styled.a`
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: ${first_color};
   color: #fff;
   padding: .75rem;
   border-radius: .5rem;
-  font-weight: var(--font-medium);
+  font-weight: ${font_medium};
   border-radius: 30px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
 
   :hover {
-    background-color: var(--first-color-alt);
+    background-color: ${first_color_alt};
     i {
       transform: translateX(.25rem);
     }
@@ -153,7 +168,7 @@ export const HomeButton = Styled.a`
 
   i {
     font-size: 1.25rem;
-    margin-left: var(--mb-0-50);
+    margin-left: ${mb_0_50};
     transition: .3s;
   }
 `;
@@ -161,13 +176,13 @@ export const HomeButton = Styled.a`
 export const HomeScroll = Styled.div`
   display: none;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 `;
 
 export const HomeScrollButton = Styled.a`
-  color: var(--first-color);
+  color: ${first_color};
   transition: .3s;
 
   display: inline-flex;
@@ -183,17 +198,17 @@ export const HomeScrollButton = Styled.a`
   }
 
   span {
-    font-size: var(--small-font-size);
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    margin-right: var(--mb-0-25);
+    font-size: ${small_font_size};
+    color: ${title_color};
+    font-weight: ${font_medium};
+    margin-right: ${mb_0_25};
   }
 
   .arrow {
     font-size: 1.25rem;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-left: 3rem;
   }
 `;
