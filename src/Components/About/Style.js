@@ -1,17 +1,27 @@
 import Styled from "styled-components";
-import VariablesCSS from '../../Variables.css';
+import {
+  first_color,
+  first_color_alt,
+  font_medium,
+  h1_font_size,
+  mb_0_50,
+  mb_1,
+  mb_1_5,
+  mb_2_5,
+  small_font_size,
+} from "../../Styles/Variables";
 
 export const AboutSection = Styled.section`
   margin-top: 2rem;
   text-align: center;
 
   h2 {
-    font-size: var(--h1-font-size);
+    font-size: ${h1_font_size};
   }
 
   span {
     display: block;
-    font-size: var(--small-font-size);
+    font-size: ${small_font_size};
     margin-bottom: var(--mb-3);
   }
 
@@ -22,14 +32,14 @@ export const AboutSection = Styled.section`
 
 export const AboutContainer = Styled.div`
   max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-left: ${mb_1_5};
+  margin-right: ${mb_1_5};
   display: grid;
   gap: 1.5rem;
 
   @media (max-width: 350px) {
-    margin-right: var(--mb-1);
-    margin-left: var(--mb-1);
+    margin-right: ${mb_1};
+    margin-left: ${mb_1};
   }
 
   @media (min-width: 768px) {
@@ -42,7 +52,7 @@ export const AboutContainer = Styled.div`
 export const AboutData = Styled.div`
   p {
     text-align: center;
-    margin-bottom: var(--mb-2-5);
+    margin-bottom: ${mb_2_5};
   }
 `;
 
@@ -52,18 +62,18 @@ export const AboutButtons = Styled.div`
 
   a {
     display: inline-block;
-    background-color: var(--first-color);
+    background-color: ${first_color};
     color: #fff;
     padding: .75rem;
     border-radius: .5rem;
-    font-weight: var(--font-medium);
+    font-weight: ${font_medium};
     border-radius: 30px;
     display: inline-flex;
     align-items: center;
 
     :hover {
       cursor: pointer;
-      background-color: var(--first-color-alt);
+      background-color: ${first_color_alt};
 
       i {
         transform: translateY(.25rem);
@@ -72,7 +82,7 @@ export const AboutButtons = Styled.div`
 
     i {
       font-size: 1.25rem;
-      margin-left: var(--mb-0-50);
+      margin-left: ${mb_0_50};
       transition: .3s;
     }
   }
