@@ -1,17 +1,31 @@
 import Styled from 'styled-components';
+import {
+  container_color,
+  first_color,
+  font_medium,
+  h1_font_size,
+  h3_font_size,
+  mb_0_25,
+  mb_0_50,
+  mb_1,
+  mb_1_5,
+  mb_3,
+  small_font_size,
+  z_modal,
+} from '../../Styles/Variables';
 
 export const ServicesSection = Styled.section`
   padding: 2rem 0 4rem;
 
   h2 {
-    font-size: var(--h1-font-size);
+    font-size: ${h1_font_size};
     text-align: center;
   }
 
   span {
     display: block;
-    font-size: var(--small-font-size);
-    margin-bottom: var(--mb-3);
+    font-size: ${small_font_size};
+    margin-bottom: ${mb_3};
     text-align: center;
   }
 
@@ -22,14 +36,14 @@ export const ServicesSection = Styled.section`
 
 export const ServicesContainer = Styled.div`
   max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-left: ${mb_1_5};
+  margin-right: ${mb_1_5};
   display: flex;
   justify-content: center;
 
   @media (max-width: 350px) {
-    margin-right: var(--mb-1);
-    margin-left: var(--mb-1);
+    margin-right: ${mb_1};
+    margin-left: ${mb_1};
   }
 
   @media (min-width: 768px) {
@@ -47,7 +61,7 @@ export const ServicesContainer = Styled.div`
 export const ServicesContent = Styled.div`
   width: 250px;
   position: relative;
-  background-color: var(--container-color);
+  background-color: ${container_color};
   padding: 3.5rem .5rem 1.25rem 1.5rem;
   border-radius: .25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
@@ -69,8 +83,8 @@ export const ServicesContent = Styled.div`
 export const ServicesIcon = Styled.i`
   display: block;
   font-size: 1.5rem;
-  color: var(--first-color);
-  margin-bottom: var(--mb-1);
+  color: ${first_color};
+  margin-bottom: ${mb_1};
 
   @media (min-width: 768px) {
     font-size: 2rem;
@@ -78,20 +92,20 @@ export const ServicesIcon = Styled.i`
 `;
 
 export const ServicesTitle = Styled.h3`
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
-  font-weight: var(--font-medium);
+  font-size: ${h3_font_size};
+  margin-bottom: ${mb_1};
+  font-weight: ${font_medium};
 `;
 
 export const ServicesButton = Styled.button`
-  font-weight: var(--font-medium);
+  font-weight: ${font_medium};
   display: inline-flex;
   align-items: center;
   background-color: transparent;
-  color: var(--first-color);
+  color: ${first_color};
   cursor: pointer;
   padding: 0;
-  font-size: var(--small-font-size);
+  font-size: ${small_font_size};
   border: none;
 
   :hover {
@@ -102,7 +116,7 @@ export const ServicesButton = Styled.button`
 
   i {
     font-size: 1.25rem;
-    margin-left: var(--mb-0-50);
+    margin-left: ${mb_0_50};
     transition: .3s;
   }
 `;
@@ -118,7 +132,7 @@ export const ServicesModal = Styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 1rem;
-  z-index: var(--z-modal);
+  z-index: ${z_modal};
   opacity: 0;
   visibility: hidden;
   transition: .3s;
@@ -130,7 +144,7 @@ export const ServicesModal = Styled.div`
 
 export const ServicesModalContent = Styled.div`
   position: relative;
-  background-color: var(--container-color);
+  background-color: ${container_color};
   padding: 1.5rem;
   border-radius: .5rem;
 
@@ -140,9 +154,9 @@ export const ServicesModalContent = Styled.div`
 `;
 
 export const ServicesModalTitle = Styled.h4`
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-  margin-bottom: var(--mb-1-5);
+  font-size: ${h3_font_size};
+  font-weight: ${font_medium};
+  margin-bottom: ${mb_1_5};
 `;
 
 export const ServicesModalClose =  Styled.i`
@@ -150,7 +164,7 @@ export const ServicesModalClose =  Styled.i`
   top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: ${first_color};
 
   :hover {
     cursor: pointer;
@@ -167,7 +181,7 @@ export const ServicesModalService = Styled.li`
   display: flex;
 
   i {
-    color: var(--first-color);
-    margin-right: var(--mb-0-25);
+    color: ${first_color};
+    margin-right: ${mb_0_25};
   }
 `;
