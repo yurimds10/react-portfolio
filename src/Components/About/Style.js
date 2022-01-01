@@ -8,6 +8,7 @@ import {
   mb_1,
   mb_1_5,
   mb_2_5,
+  mb_3,
   small_font_size,
 } from "../../Styles/Variables";
 
@@ -22,7 +23,7 @@ export const AboutSection = Styled.section`
   span {
     display: block;
     font-size: ${small_font_size};
-    margin-bottom: var(--mb-3);
+    margin-bottom: ${mb_3};
   }
 
   @media (min-width: 768px) {
@@ -86,5 +87,4 @@ export const AboutButtons = Styled.div`
       transition: .3s;
     }
   }
-
 `;

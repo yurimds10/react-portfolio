@@ -1,5 +1,19 @@
 import Styled from 'styled-components';
-import VariablesCSS from '../../Variables.css';
+import {
+  first_color,
+  font_medium,
+  h1_font_size,
+  h3_font_size,
+  mb_0_50,
+  mb_0_75,
+  mb_1,
+  mb_1_5,
+  mb_2_5,
+  mb_3,
+  normal_font_size,
+  small_font_size,
+  text_color_light,
+} from '../../Styles/Variables';
 
 export const SkillsSection = Styled.section`
   margin-top: 3rem;
@@ -12,14 +26,14 @@ export const SkillsSection = Styled.section`
 
 export const SkillsSectionTitle = Styled.h2`
   text-align: center;
-  font-size: var(--h1-font-size);
+  font-size: ${h1_font_size};
 `;
 
 export const SkillsSectionSubtitle = Styled.span`
   text-align: center;
   display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
+  font-size: ${small_font_size};
+  margin-bottom: ${mb_3};
 
   @media (min-width: 768px) {
     margin-bottom: 4rem;
@@ -29,14 +43,14 @@ export const SkillsSectionSubtitle = Styled.span`
 export const SkillsContainer = Styled.div`
   row-gap: 0;
   max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-left: ${mb_1_5};
+  margin-right: ${mb_1_5};
   display: grid;
   gap: 1.5rem;
 
   @media (max-width: 350px) {
-    margin-right: var(--mb-1);
-    margin-left: var(--mb-1);
+    margin-right: ${mb_1};
+    margin-left: ${mb_1};
   }
 
   @media (min-width: 768px) {
@@ -52,32 +66,32 @@ export const SkillsContent = Styled.div`
 export const SkillsHeader = Styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: ${mb_2_5};
   cursor: pointer;
 `;
 
 export const SkillsIcon = Styled.i`
   font-size: 2rem;
-  color: var(--first-color);
-  margin-right: var(--mb-0-75);
+  color: ${first_color};
+  margin-right: ${mb_0_75};
 `;
 
 export const SkillsTitle = Styled.h1`
-  font-size: var(--h3-font-size);
+  font-size: ${h3_font_size};
 
   @media (max-width: 350px) {
-    font-size: var(--normal-font-size);
+    font-size: ${normal_font_size};
   }
 `;
 
 export const SkillsSubtitle = Styled.span`
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
+  font-size: ${small_font_size};
+  color: ${text_color_light};
 `;
 
 export const SkillsArrow = Styled.i`
   font-size: 2rem;
-  color: var(--first-color);
+  color: ${first_color};
   margin-left: auto;
   transition: .4s;
 `;
@@ -96,19 +110,14 @@ export const SkillsData = Styled.div`
 export const SkillsTitles = Styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: var(--mb-0-50);
+  margin-bottom: ${mb_0_50};
 
   h3 {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-  }
-
-  span {
-
+    font-size: ${normal_font_size};
+    font-weight: ${font_medium};
   }
 `;
 
 export const SkillsBar = Styled.div`
-  background-color: var(--first-color);
-
+  background-color: ${first_color};
 `

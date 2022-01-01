@@ -9,7 +9,7 @@ import Contact from './Components/Contact/Index';
 import Footer from './Components/Footer/Index';
 import { GlobalStyle } from './Styles/GlobalStyle';
 
-export default function App() {
+const App = () => {
   return (
     <div>
       <GlobalStyle/>
@@ -26,3 +26,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;
