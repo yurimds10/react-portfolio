@@ -1,12 +1,22 @@
 import Styled from "styled-components";
-import VariablesCSS from '../../Variables.css';
+import {
+  first_color,
+  first_color_lighter,
+  h1_font_size,
+  mb_0_25,
+  mb_1,
+  mb_1_5,
+  mb_3,
+  smaller_font_size,
+  small_font_size,
+} from '../../Styles/Variables';
 
 export const FooterSection = Styled.footer`
   padding-top: 2rem;
 `;
 
 export const FooterBackground = Styled.div`
-  background-color: var(--first-color);
+  background-color: ${first_color};
   padding: 2rem 0 3rem;
 
   @media (min-width: 768px) {
@@ -16,26 +26,26 @@ export const FooterBackground = Styled.div`
 
 export const FooterContainer = Styled.div`
   max-width: 768px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-left: ${mb_1_5};
+  margin-right: ${mb_1_5};
   display: grid;
   gap: 1.5rem;
   row-gap: 3.5rem;
 
   h1 {
-    font-size: var(--h1-font-size);
-    margin-bottom: var(--mb-0-25);
+    font-size: ${h1_font_size};
+    margin-bottom: ${mb_0_25};
     color: #FFF;
   }
 
   span {
-    font-size: var(--small-font-size);
+    font-size: ${small_font_size};
     color: #FFF;
   }
 
   @media (max-width: 350px) {
-    margin-right: var(--mb-1);
-    margin-left: var(--mb-1);
+    margin-right: ${mb_1});
+    margin-left: ${mb_1});
   }
 
   @media (min-width: 568px) {
@@ -62,7 +72,7 @@ export const FooterLinks = Styled.ul`
     color: #FFF;
 
     :hover {
-      color: var(--first-color-lighter);
+      color: ${first_color_lighter};
     }
   }
 
@@ -75,11 +85,11 @@ export const FooterLinks = Styled.ul`
 export const FooterSocials = Styled.div`
   a {
     font-size: 1.25rem;
-    margin-right: var(--mb-1-5);
+    margin-right: ${mb_1_5};
     color: #FFF;
 
     :hover {
-      color: var(--first-color-lighter);
+      color: ${first_color_lighter};
     }
   }
 
@@ -89,10 +99,10 @@ export const FooterSocials = Styled.div`
 `;
 
 export const FooterCopy = Styled.p`
-  font-size: var(--smaller-font-size);
+  font-size: ${smaller_font_size};
   text-align: center;
   color: #FFF;
-  margin-top: var(--mb-3);
+  margin-top: ${mb_3};
 
   @media (min-width: 768px) {
     margin-top: 4.5rem;

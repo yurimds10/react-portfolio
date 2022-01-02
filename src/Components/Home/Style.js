@@ -10,6 +10,7 @@ import {
   mb_0_75,
   mb_1,
   mb_1_5,
+  mb_2,
   small_font_size,
   text_color,
   title_color
@@ -144,7 +145,7 @@ export const HomeSubtitle = Styled.h3`
 `;
 
 export const HomeDescription = Styled.p`
-  margin-bottom: var(--mb-2);
+  margin-bottom: ${mb_2};
 `;
 
 export const HomeButton = Styled.a`

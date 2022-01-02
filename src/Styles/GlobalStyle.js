@@ -1,6 +1,17 @@
-import styled, { createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
+import {
+  header_height,
+  body_font,
+  normal_font_size,
+  body_color,
+  text_color,
+  title_color,
+  font_semi_bold,
+} from "./Variables";
 
 export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
   * {
   box-sizing: border-box;
   padding: 0;
@@ -12,16 +23,16 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    margin: 0 0 var(--header-height) 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
+    margin: 0 0 ${header_height} 0;
+    font-family: ${body_font}, sans-serif;
+    font-size: ${normal_font_size};
+    background-color: ${body_color};
+    color: ${text_color};
   }
 
   h1, h2, h3, h4 {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
+    color: ${title_color};
+    font-weight: ${font_semi_bold};
   }
 
   ul {

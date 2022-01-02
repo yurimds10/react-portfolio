@@ -1,5 +1,4 @@
 /*==================== VARIABLES CSS ====================*/
-
 export const header_height = `3em`;
 
 /*========== Color ==========*/
@@ -20,7 +19,7 @@ export const scroll_thumb_color = `hsl(${color}, 12%, 36%))`;
 export const container_color = `hsl(${color}, 29%, 16%)`;
 
 /*========== Font and typography ==========*/
-
+export const body_font = `Poopins`;
 
 /* 0.5rem = 8px, 1rem = 16px, 1.5rem = 24px ...*/
 export const big_font_size = `2rem`;

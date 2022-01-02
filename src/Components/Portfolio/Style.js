@@ -1,5 +1,4 @@
 import Styled from "styled-components";
-import VariablesCSS from '../../Variables.css';
 
 export const PortfolioSection = Styled.section`
   padding: 2rem 0 4rem;
