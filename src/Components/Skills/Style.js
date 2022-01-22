@@ -1,5 +1,6 @@
 import Styled from 'styled-components';
 import {
+  container_color,
   first_color,
   font_medium,
   h1_font_size,
@@ -45,8 +46,11 @@ export const SkillsContainer = Styled.div`
   max-width: 768px;
   margin-left: ${mb_1_5};
   margin-right: ${mb_1_5};
-  display: grid;
-  gap: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+
 
   @media (max-width: 350px) {
     margin-right: ${mb_1};
@@ -63,61 +67,20 @@ export const SkillsContent = Styled.div`
   
 `;
 
-export const SkillsHeader = Styled.div`
+export const SkillDiv = Styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: ${container_color};
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: ${mb_2_5};
-  cursor: pointer;
+  flex-direction: row;
+  margin-bottom: ${mb_1_5};
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+  transition: .3s;
 `;
 
-export const SkillsIcon = Styled.i`
-  font-size: 2rem;
-  color: ${first_color};
-  margin-right: ${mb_0_75};
+export const SkillIcon = Styled.i`
+  font-size: 3rem;
 `;
-
-export const SkillsTitle = Styled.h1`
-  font-size: ${h3_font_size};
-
-  @media (max-width: 350px) {
-    font-size: ${normal_font_size};
-  }
-`;
-
-export const SkillsSubtitle = Styled.span`
-  font-size: ${small_font_size};
-  color: ${text_color_light};
-`;
-
-export const SkillsArrow = Styled.i`
-  font-size: 2rem;
-  color: ${first_color};
-  margin-left: auto;
-  transition: .4s;
-`;
-
-export const SkillsList = Styled.div`
-  display: grid;
-  gap: 1.5rem;
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
-`;
-
-export const SkillsData = Styled.div`
-
-`;
-
-export const SkillsTitles = Styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: ${mb_0_50};
-
-  h3 {
-    font-size: ${normal_font_size};
-    font-weight: ${font_medium};
-  }
-`;
-
-export const SkillsBar = Styled.div`
-  background-color: ${first_color};
-`

@@ -35,7 +35,7 @@ export const NavContainer = Styled.nav`
   max-width: 768px;
   margin-left: ${mb_1_5};
   margin-right: ${mb_1_5};
-  height: $${header_height};
+  height: ${header_height};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -47,7 +47,7 @@ export const NavContainer = Styled.nav`
 
 
   @media (min-width: 768px) {
-    height: ${header_height} + 1.5rem;
+    height: calc(${header_height} + 1.5rem);
     column-gap: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -55,16 +55,13 @@ export const NavContainer = Styled.nav`
 `;
 
 export const NavLogo = Styled.a`
-  color: $${title_color};
+  color: ${title_color};
   font-weight: ${font_medium};
   cursor: pointer;
   :hover {
     color: ${first_color};
   }
 `;
-
-const open = 0;
-const close = -100000;
 
 export const NavMenu = Styled.div`
   @media (max-width: 350px) {

@@ -47,4 +47,9 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     height: auto;
   }
+
+  /*Classes*/
+  .show-scroll {
+    
+  }
 `;
