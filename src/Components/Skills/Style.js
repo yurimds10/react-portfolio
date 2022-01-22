@@ -50,7 +50,9 @@ export const SkillsContainer = Styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   
-
+  @media screen and (max-width: 330px) {
+    justify-content: space-evenly;
+  }
 
   @media (max-width: 350px) {
     margin-right: ${mb_1};
@@ -79,8 +81,22 @@ export const SkillDiv = Styled.div`
   border-radius: .25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
   transition: .3s;
+
+  @media (min-width: 544px) {
+    width: 150px;
+    height: 150px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 170px;
+    height: 170px;
+  }
 `;
 
 export const SkillIcon = Styled.i`
   font-size: 3rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 4rem;
+  }
 `;
