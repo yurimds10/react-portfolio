@@ -80,7 +80,10 @@ export const SkillDiv = Styled.div`
   margin-bottom: ${mb_1_5};
   border-radius: .25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
-  transition: .3s;
+
+  :hover {
+    border: 2px solid ${first_color};
+  }
 
   @media (min-width: 544px) {
     width: 150px;
@@ -95,6 +98,8 @@ export const SkillDiv = Styled.div`
 
 export const SkillIcon = Styled.i`
   font-size: 3rem;
+
+  
 
   @media screen and (min-width: 768px) {
     font-size: 4rem;
