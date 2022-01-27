@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mb_3, small_font_size } from "../../Styles/Variables";
+import { mb_3, small_font_size } from '../../Styles/Variables';
 
 export const Subtitle = styled.span`
   text-align: center;

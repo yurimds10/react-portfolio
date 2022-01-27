@@ -1,5 +1,8 @@
 import Styled from "styled-components";
-import { container_color, first_color, mb_2 } from "../../Styles/Variables";
+import { container_color,
+  first_color,
+  mb_2
+} from '../../Styles/Variables';
 
 export const PortfolioSection = Styled.section`
   padding: 2rem 0 4rem;

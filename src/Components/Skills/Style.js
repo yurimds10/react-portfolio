@@ -2,18 +2,11 @@ import Styled from 'styled-components';
 import {
   container_color,
   first_color,
-  font_medium,
   h1_font_size,
-  h3_font_size,
-  mb_0_50,
-  mb_0_75,
   mb_1,
   mb_1_5,
-  mb_2_5,
   mb_3,
-  normal_font_size,
   small_font_size,
-  text_color_light,
 } from '../../Styles/Variables';
 
 export const SkillsSection = Styled.section`

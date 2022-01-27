@@ -14,7 +14,7 @@ import {
   HomeButton,
   HomeScroll,
   HomeScrollButton,
-} from './Style'
+} from './Style';
 
 export default function Home() {
   return (
