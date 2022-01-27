@@ -35,15 +35,15 @@ export default function Footer() {
 
           <FooterSocials>
             <a href="https://www.linkedin.com/in/yuri-ricardo-mendes-b34753214/" target="_blank" rel="noreferrer">
-              <i class="uil uil-linkedin-alt"></i>
+              <i className="uil uil-linkedin-alt"></i>
             </a>
 
             <a href="https://www.github.com/YuriMendess" target="_blank" rel="noreferrer">
-              <i class="uil uil-github-alt"></i>
+              <i className="uil uil-github-alt"></i>
             </a>
 
             <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-              <i class="uil uil-instagram"></i>
+              <i className="uil uil-instagram"></i>
             </a>
           </FooterSocials>
         </FooterContainer>

@@ -13,7 +13,7 @@ import {
   NavToggle
 } from './Style';
 
-export default function Header() {
+export default function Header(): JSX.Element {
   const [open, setOpen] = useState(false);
 
   return (

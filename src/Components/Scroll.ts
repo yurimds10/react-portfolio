@@ -1,4 +1,5 @@
 import React from "react";
+import { JsxElement } from "typescript";
 
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp() {
@@ -12,13 +13,3 @@ function scrollUp() {
     }
 }
 window.addEventListener('scroll', scrollUp);
-
-function Scroll() {
-    return (
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup__icon"></i>
-        </a>
-    )
-}
-
-export default Scroll;

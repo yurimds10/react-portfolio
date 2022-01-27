@@ -7,7 +7,7 @@ import{
   SkillsContainer,
   SkillDiv,
   SkillIcon
-} from './Style'
+} from './Style';
 
 
 export default function Skills() {

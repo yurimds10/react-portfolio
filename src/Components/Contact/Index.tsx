@@ -1,4 +1,5 @@
 import React from "react";
+import { JsxElement } from "typescript";
 
 import {
   ContactSection,
@@ -11,9 +12,9 @@ import {
   ContactInput,
   ContactTextArea,
   ContactButton,
-} from './Style'
+} from './Style';
 
-export default function Contact() {
+export default function Contact(): JSX.Element {
   return (
     <ContactSection id="contact">
       <h2>Contact Me</h2>
@@ -21,7 +22,7 @@ export default function Contact() {
       <ContactContainer>
         <div>
           <ContactInformation>
-            <i class="uil uil-phone"></i>
+            <i className="uil uil-phone"></i>
     
             <div>
               <h3>Telegram</h3>
@@ -30,7 +31,7 @@ export default function Contact() {
           </ContactInformation>
     
           <ContactInformation>
-            <i class="uil uil-envelope"></i>
+            <i className="uil uil-envelope"></i>
     
             <div>
               <h3>Email</h3>
@@ -42,29 +43,29 @@ export default function Contact() {
         <ContactForm action="">
           <ContactInputs>
             <ContactContent>
-              <ContactLabel for="">Name</ContactLabel>
+              <ContactLabel >Name</ContactLabel>
               <ContactInput type="text"/>
             </ContactContent>
 
             <ContactContent>
-              <ContactLabel for="">Email</ContactLabel>
+              <ContactLabel >Email</ContactLabel>
               <ContactInput type="email"/>
             </ContactContent>
 
             <ContactContent>
-              <ContactLabel for="">Project</ContactLabel>
+              <ContactLabel >Project</ContactLabel>
               <ContactInput type="text"/>
             </ContactContent>
 
             <ContactContent>
-              <ContactLabel for="">Message</ContactLabel>
-              <ContactTextArea name="" id="" cols="0" rows="7"></ContactTextArea>
+              <ContactLabel >Message</ContactLabel>
+              <ContactTextArea name="message" id="message" cols={0} rows={0}></ContactTextArea>
             </ContactContent>
 
             <div>
               <ContactButton>
                 Send Message
-                <i class="uil uil-message"></i>
+                <i className="uil uil-message"></i>
               </ContactButton>
             </div>
           </ContactInputs>

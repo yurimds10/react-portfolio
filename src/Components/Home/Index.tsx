@@ -1,5 +1,5 @@
 import React from "react";
-import {ReactComponent as HomeSvg} from '../../Assets/Img/image.svg';
+import { ReactComponent as HomeSvg } from '../../Assets/Img/image.svg';
 
 import {
   HomeSection,
