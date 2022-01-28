@@ -1,6 +1,3 @@
-import React from "react";
-import { ReactComponent as HomeSvg } from '../../Assets/Img/image.svg';
-
 import {
   HomeSection,
   HomeContainer,
@@ -35,7 +32,7 @@ export default function Home() {
             </a>
           </HomeSocial>
           <HomeImg>
-            <HomeSvg/>
+            
           </HomeImg>
 
           <HomeData>

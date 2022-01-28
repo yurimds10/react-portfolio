@@ -1,5 +1,4 @@
-import React from "react";
-
+import React from 'react';
 import {
   ServicesSection,
   ServicesContainer,
@@ -16,7 +15,7 @@ import {
 
 } from './Style';
 
-export default function Services() {
+export default function Services(): JSX.Element {
   return (
     <ServicesSection id="services">
       <h2>Services</h2>
@@ -26,7 +25,7 @@ export default function Services() {
         <ServicesContent>
           <div>
             <ServicesIcon className="uil uil-arrow"></ServicesIcon>
-            <ServicesTitle>Frontend <br/> Developer</ServicesTitle>
+            <ServicesTitle>Website <br/> Development</ServicesTitle>
           </div>
 
           <ServicesButton onClick={() => console.log(`Services Section ok!`)}>
@@ -36,7 +35,7 @@ export default function Services() {
 
           <ServicesModal>
             <ServicesModalContent>
-              <ServicesModalTitle>Front-end <br/> Development</ServicesModalTitle>
+              <ServicesModalTitle>Website <br/> Development</ServicesModalTitle>
               <ServicesModalClose className="uil uil-times"/>
 
               <ServicesModalServices>

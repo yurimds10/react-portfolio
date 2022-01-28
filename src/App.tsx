@@ -9,7 +9,7 @@ import Contact from './Components/Contact/Index';
 import Footer from './Components/Footer/Index';
 import { GlobalStyle } from './Styles/GlobalStyle';
 
-const App = () => {
+const App = ():JSX.Element => {
   return (
     <div>
       <GlobalStyle/>
