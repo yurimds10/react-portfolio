@@ -12,6 +12,10 @@ import {
 
 } from '../../Styles/Variables';
 
+interface openProps {
+  shouldOpen: boolean;
+}
+
 export const HeaderSection = Styled.header`
   width: 100%;
   position: fixed;
@@ -58,7 +62,7 @@ export const NavLogo = Styled.a`
   color: ${title_color};
   font-weight: ${font_medium};
   cursor: pointer;
-  :hover {
+  &:hover {
     color: ${first_color};
   }
 `;
@@ -74,7 +78,7 @@ export const NavMenu = Styled.div`
 
   @media (max-width: 767px) {
     position: fixed;
-    bottom: -100%;
+    bottom: ${(props: openProps) => props.shouldOpen ? 0 : -1000};
     left: 0;
     width: 100%;
     background-color: ${body_color};

@@ -14,13 +14,13 @@ import {
 } from './Style';
 
 export default function Header(): JSX.Element {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <HeaderSection id="header">     
       <NavContainer>
         <NavLogo>Yuri</NavLogo>
-        <NavMenu className="nav-menu">
+        <NavMenu shouldOpen={open}>
           <NavList>
             <li>
               <NavLink href="#home">
@@ -64,12 +64,12 @@ export default function Header(): JSX.Element {
               </NavLink>
             </li>
           </NavList>
-          <NavCloseButton onClick={() => console.log(false)}>
+          <NavCloseButton onClick={() => setOpen(false)}>
             <NavClose className="uil uil-times"/>
           </NavCloseButton>
         </NavMenu>
         <NavButtons>
-            <NavToggle onClick={() => console.log(true)}>
+            <NavToggle onClick={() => setOpen(true)}>
               <i className="uil uil-apps"/>
             </NavToggle>
         </NavButtons>
