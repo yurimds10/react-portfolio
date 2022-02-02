@@ -13,6 +13,7 @@ import {
   HomeScrollButton,
 } from './Style';
 
+
 export default function Home() {
   return (
     <HomeSection id="home">

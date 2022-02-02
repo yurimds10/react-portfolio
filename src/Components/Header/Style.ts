@@ -13,7 +13,7 @@ import {
 } from '../../Styles/Variables';
 
 interface OpenProps {
-  primary: boolean;
+  open: boolean;
 }
 
 export const HeaderSection = Styled.header`
@@ -78,7 +78,7 @@ export const NavMenu = Styled.div`
 
   @media (max-width: 767px) {
     position: fixed;
-    bottom: ${(props: OpenProps) => props.primary ? '-100%' : '0'};
+    bottom: ${(props: OpenProps) => props.open ? '-100%' : '0'};
     left: 0;
     width: 100%;
     background-color: ${body_color};

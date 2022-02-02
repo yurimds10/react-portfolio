@@ -22,7 +22,7 @@ export default function Header(): JSX.Element {
     <HeaderSection id="header">     
       <NavContainer>
         <NavLogo>Yuri</NavLogo>
-        <NavMenu primary={open}>
+        <NavMenu open={open}>
           <NavList>
             <li>
               <NavLink href="#home">
