@@ -13,14 +13,16 @@ import {
   NavToggle
 } from './Style';
 
+
 export default function Header(): JSX.Element {
-  const [open, setOpen] = useState<boolean>(false);
+
+  const [open, setOpen] = useState<boolean>(true);
 
   return (
     <HeaderSection id="header">     
       <NavContainer>
         <NavLogo>Yuri</NavLogo>
-        <NavMenu shouldOpen={open}>
+        <NavMenu primary={open}>
           <NavList>
             <li>
               <NavLink href="#home">
@@ -64,12 +66,12 @@ export default function Header(): JSX.Element {
               </NavLink>
             </li>
           </NavList>
-          <NavCloseButton onClick={() => setOpen(false)}>
+          <NavCloseButton onClick={() => setOpen(true)}>
             <NavClose className="uil uil-times"/>
           </NavCloseButton>
         </NavMenu>
         <NavButtons>
-            <NavToggle onClick={() => setOpen(true)}>
+            <NavToggle onClick={() => setOpen(false)}>
               <i className="uil uil-apps"/>
             </NavToggle>
         </NavButtons>

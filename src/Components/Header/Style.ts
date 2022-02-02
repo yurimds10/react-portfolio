@@ -12,8 +12,8 @@ import {
 
 } from '../../Styles/Variables';
 
-interface openProps {
-  shouldOpen: boolean;
+interface OpenProps {
+  primary: boolean;
 }
 
 export const HeaderSection = Styled.header`
@@ -78,13 +78,13 @@ export const NavMenu = Styled.div`
 
   @media (max-width: 767px) {
     position: fixed;
-    bottom: ${(props: openProps) => props.shouldOpen ? 0 : -1000};
+    bottom: ${(props: OpenProps) => props.primary ? '-100%' : '0'};
     left: 0;
     width: 100%;
     background-color: ${body_color};
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
-    order-radius: 1.5rem 1.5rem 0 0;
+    border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
   }
 
@@ -143,21 +143,18 @@ export const NavClose = Styled.i`
   cursor: pointer;
   color: ${first_color};
 
-  @media (min-width: 768px) {
-    display: none;
-  }
+  @media (min-width: 768px) {display: none;}
 `;
 
-export const NavButtons = Styled.div`
-
-`;
+export const NavButtons = Styled.div``;
 
 export const NavToggle = Styled.div`
   font-size: 1.1rem;
   cursor: pointer;
   color: ${title_color};
   font-weight: ${font_medium};
-  :hover {
+  
+  &:hover {
     color: ${first_color};
   }
 

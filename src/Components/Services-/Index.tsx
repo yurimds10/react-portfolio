@@ -16,19 +16,19 @@ import {
 } from './Style';
 
 export default function Services(): JSX.Element {
+
   return (
     <ServicesSection id="services">
       <h2>Services</h2>
       <span>What I offer</span>
       <ServicesContainer>
-
         <ServicesContent>
           <div>
             <ServicesIcon className="uil uil-arrow"></ServicesIcon>
             <ServicesTitle>Website <br/> Development</ServicesTitle>
           </div>
 
-          <ServicesButton onClick={() => console.log(`Services Section ok!`)}>
+          <ServicesButton>
             View More
             <i className="uil uil-arrow-right"></i>
           </ServicesButton>

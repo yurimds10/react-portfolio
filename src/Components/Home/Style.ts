@@ -86,7 +86,6 @@ export const HomeSocial = Styled.div`
 `;
 
 export const HomeImg = Styled.div`
-
   svg {
     width: 250px;
     height: 250px;

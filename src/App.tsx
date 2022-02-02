@@ -9,7 +9,7 @@ import Contact from './Components/Contact/Index';
 import Footer from './Components/Footer/Index';
 import { GlobalStyle } from './Styles/GlobalStyle';
 
-const App = ():JSX.Element => {
+export default function App():JSX.Element {
   return (
     <div>
       <GlobalStyle/>
@@ -26,5 +26,3 @@ const App = ():JSX.Element => {
     </div>
   );
 }
-
-export default App;

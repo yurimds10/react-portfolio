@@ -14,6 +14,7 @@ import {
   z_modal,
 } from '../../Styles/Variables';
 
+
 export const ServicesSection = Styled.section`
   padding: 2rem 0 4rem;
 
@@ -59,7 +60,7 @@ export const ServicesContainer = Styled.div`
 `;
 
 export const ServicesContent = Styled.div`
-  width: 250px;
+  width: 350px;
   position: relative;
   background-color: ${container_color};
   padding: 3.5rem .5rem 1.25rem 1.5rem;
