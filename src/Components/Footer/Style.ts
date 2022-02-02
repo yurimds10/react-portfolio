@@ -1,5 +1,7 @@
 import Styled from "styled-components";
 import {
+  bigger_h1_font_size,
+  bigger_small_font_size,
   first_color,
   first_color_lighter,
   h1_font_size,
@@ -36,11 +38,19 @@ export const FooterContainer = Styled.div`
     font-size: ${h1_font_size};
     margin-bottom: ${mb_0_25};
     color: #FFF;
+
+    @media screen and (min-width: 968px) {
+      font-size: ${bigger_h1_font_size};
+    }
   }
 
   span {
     font-size: ${small_font_size};
     color: #FFF;
+
+    @media screen and (min-width: 968px) {
+      font-size: ${bigger_small_font_size};
+    }
   }
 
   @media (max-width: 350px) {

@@ -1,4 +1,6 @@
 import React from "react";
+import { Subtitle } from "../Subtitle/Subtitle";
+import { Title } from "../Title/Title";
 
 import {
   AboutSection,
@@ -10,8 +12,8 @@ import {
 export default function About() {
   return (
     <AboutSection id="about">
-      <h2>About Me</h2>
-      <span>My Introduction</span>
+      <Title>About Me</Title>
+      <Subtitle>My Introduction</Subtitle>
       <AboutContainer>
         <AboutData>
           <p>

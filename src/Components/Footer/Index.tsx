@@ -51,5 +51,5 @@ export default function Footer() {
         <FooterCopy>&#169; Yuri Mendes. All right reserved</FooterCopy>
       </FooterBackground>
     </FooterSection>
-  )
+  );
 }

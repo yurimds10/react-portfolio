@@ -9,6 +9,7 @@ import {
   mb_1_5,
   title_color,
   z_fixed,
+  bigger_small_font_size,
 
 } from '../../Styles/Variables';
 
@@ -120,6 +121,10 @@ export const NavLink = Styled.a`
 
   :hover {
     color: ${first_color};
+  }
+
+  @media screen and (min-width: 968px) {
+    font-size: ${bigger_small_font_size};
   }
 `;
 

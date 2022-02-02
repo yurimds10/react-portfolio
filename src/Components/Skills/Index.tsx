@@ -1,9 +1,9 @@
 import React from "react";
+import { Subtitle } from "../Subtitle/Subtitle";
+import { Title } from "../Title/Title";
 
 import{
   SkillsSection,
-  SkillsSectionTitle,
-  SkillsSectionSubtitle,
   SkillsContainer,
   SkillDiv,
   SkillIcon
@@ -13,8 +13,8 @@ import{
 export default function Skills() {
   return (
     <SkillsSection id="skills">
-      <SkillsSectionTitle>Skills</SkillsSectionTitle>
-      <SkillsSectionSubtitle>My technical level</SkillsSectionSubtitle>
+      <Title>Skills</Title>
+      <Subtitle>My technical level</Subtitle>
       <SkillsContainer>
         
         <SkillDiv><SkillIcon className="devicon-html5-plain colored"></SkillIcon></SkillDiv>

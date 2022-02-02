@@ -18,18 +18,6 @@ import {
 export const ServicesSection = Styled.section`
   padding: 2rem 0 4rem;
 
-  h2 {
-    font-size: ${h1_font_size};
-    text-align: center;
-  }
-
-  span {
-    display: block;
-    font-size: ${small_font_size};
-    margin-bottom: ${mb_3};
-    text-align: center;
-  }
-
   @media (min-width: 768px) {
     padding: 6rem 0 2rem;
   }

@@ -18,22 +18,6 @@ export const SkillsSection = Styled.section`
   }
 `;
 
-export const SkillsSectionTitle = Styled.h2`
-  text-align: center;
-  font-size: ${h1_font_size};
-`;
-
-export const SkillsSectionSubtitle = Styled.span`
-  text-align: center;
-  display: block;
-  font-size: ${small_font_size};
-  margin-bottom: ${mb_3};
-
-  @media (min-width: 768px) {
-    margin-bottom: 4rem;
-  }
-`;
-
 export const SkillsContainer = Styled.div`
   row-gap: 0;
   max-width: 768px;

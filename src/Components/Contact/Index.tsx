@@ -1,4 +1,6 @@
 import React from "react";
+import { Subtitle } from "../Subtitle/Subtitle";
+import { Title } from "../Title/Title";
 import {
   ContactSection,
   ContactContainer,
@@ -15,8 +17,8 @@ import {
 export default function Contact(): JSX.Element {
   return (
     <ContactSection id="contact">
-      <h2>Contact Me</h2>
-      <span>Get in touch</span>
+      <Title>Contact Me</Title>
+      <Subtitle>Get in touch</Subtitle>
       <ContactContainer>
         <div>
           <ContactInformation>

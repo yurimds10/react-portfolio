@@ -16,16 +16,6 @@ export const AboutSection = Styled.section`
   margin-top: 2rem;
   text-align: center;
 
-  h2 {
-    font-size: ${h1_font_size};
-  }
-
-  span {
-    display: block;
-    font-size: ${small_font_size};
-    margin-bottom: ${mb_3};
-  }
-
   @media (min-width: 768px) {
     padding: 6rem 0 2rem;
   }

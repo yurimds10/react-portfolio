@@ -1,4 +1,6 @@
 import React from 'react';
+import { Subtitle } from '../Subtitle/Subtitle';
+import { Title } from '../Title/Title';
 import {
   ServicesSection,
   ServicesContainer,
@@ -19,8 +21,8 @@ export default function Services(): JSX.Element {
 
   return (
     <ServicesSection id="services">
-      <h2>Services</h2>
-      <span>What I offer</span>
+      <Title>Services</Title>
+      <Subtitle>What I offer</Subtitle>
       <ServicesContainer>
         <ServicesContent>
           <div>

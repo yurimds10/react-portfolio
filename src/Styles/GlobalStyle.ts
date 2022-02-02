@@ -7,9 +7,9 @@ import {
   text_color,
   title_color,
   font_semi_bold,
-  scroll_bar_color,
-  scroll_thumb_color,
-  text_color_light,
+
+  first_color,
+  first_color_alt,
 } from "./Variables";
 
 export const GlobalStyle = createGlobalStyle`
@@ -51,16 +51,15 @@ export const GlobalStyle = createGlobalStyle`
 
   ::-webkit-scrollbar {
     width: .60rem;
-    background-color: ${scroll_bar_color};
     border-radius: .5rem;
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${scroll_thumb_color};
+    background-color: ${first_color};
     border-radius: .5rem;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: ${text_color_light};
+    background-color: ${first_color_alt};
   }
 `;

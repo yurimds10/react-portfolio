@@ -1,5 +1,7 @@
 import Styled from 'styled-components';
 import {
+  bigger_big_font_size,
+  bigger_h3_font_size,
   big_font_size,
   first_color,
   first_color_alt,
@@ -27,7 +29,7 @@ export const HomeSection = Styled.section`
 
 export const HomeContainer = Styled.div`
   gap: 1rem;
-  max-width: 768px;
+  max-width: 968px;
   margin-left: ${mb_1_5};
   margin-right: ${mb_1_5};
   display: grid;
@@ -61,7 +63,7 @@ export const HomeContent = Styled.div`
   }
 
   @media (min-width: 768px) {
-    padding-top: 5.5rem;
+    padding-top: 4.5rem;
     column-gap: 2rem;
   }
 `;
@@ -81,12 +83,11 @@ export const HomeSocial = Styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    transform: translateX(-6rem);
+    margin-right: 3rem;
   }
 `;
 
 export const HomeImg = Styled.div`
-  border: 1px solid red;
   svg {
     width: 200px;
     height: 200px;
@@ -106,8 +107,8 @@ export const HomeImg = Styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    width: 370px;
-    height: 370px;
+    width: 400px;
+    height: 400px;
 
     svg {
     width: 350px;
@@ -132,10 +133,18 @@ export const HomeData = Styled.div`
   @media screen and (min-width: 568px) {
     grid-column: initial;
   }
+
+  @media screen and (min-width: 1024px) {
+    width: 350px;
+  }
 `;
 
 export const HomeTitle = Styled.h1`
   font-size: ${big_font_size};
+
+  @media screen and (min-width: 968px) {
+    font-size: ${bigger_big_font_size};
+  }
 `;
 
 export const HomeSubtitle = Styled.h3`
@@ -143,6 +152,10 @@ export const HomeSubtitle = Styled.h3`
   color: ${text_color};
   font-weight: ${font_medium};
   margin-bottom: ${mb_0_75};
+
+  @media screen and (min-width: 968px) {
+    font-size: ${bigger_h3_font_size};
+  }
 `;
 
 export const HomeDescription = Styled.p`

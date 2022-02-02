@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mb_3, small_font_size } from '../../Styles/Variables';
+import { bigger_small_font_size, mb_3, small_font_size } from '../../Styles/Variables';
 
 export const Subtitle = styled.span`
   text-align: center;
@@ -9,5 +9,9 @@ export const Subtitle = styled.span`
 
   @media (min-width: 768px) {
     margin-bottom: 4rem;
+  }
+
+  @media screen and (min-width: 968px) {
+    font-size: ${bigger_small_font_size};
   }
 `;

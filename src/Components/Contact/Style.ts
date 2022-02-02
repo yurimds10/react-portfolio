@@ -21,14 +21,6 @@ import {
 
 export const ContactSection = Styled.section`
   padding: 2rem 0 4rem;
-  h2 {
-    text-align: center;
-  }
-
-  span {
-    text-align: center;
-    display: block;
-  }
 
   @media (min-width: 768px) {
     padding: 6rem 0 2rem;
