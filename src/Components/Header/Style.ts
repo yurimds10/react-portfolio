@@ -36,7 +36,7 @@ export const HeaderSection = Styled.header`
 `;
 
 export const NavContainer = Styled.nav`
-  max-width: 768px;
+  max-width: 968px;
   margin-left: ${mb_1_5};
   margin-right: ${mb_1_5};
   height: ${header_height};
@@ -51,7 +51,7 @@ export const NavContainer = Styled.nav`
 
 
   @media (min-width: 768px) {
-    height: calc(${header_height} + 1.5rem);
+    height: calc(3rem + 1.5rem);
     column-gap: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -89,6 +89,7 @@ export const NavMenu = Styled.div`
   }
 
   @media (min-width: 768px) {
+    display: flex;
     margin-left: auto;
   }
 `;

@@ -22,13 +22,24 @@ export const container_color = `hsl(${color}, 29%, 16%)`;
 export const body_font = `Poopins`;
 
 /* 0.5rem = 8px, 1rem = 16px, 1.5rem = 24px ...*/
-export const big_font_size = `2rem`;
-export const h1_font_size = `1.5rem`;
-export const h2_font_size = `1.25rem`;
-export const h3_font_size = `1.125rem`;
-export const normal_font_size = `.938rem`;
-export const small_font_size = `.813rem`;
-export const smaller_font_size = `.75rem`;
+export let big_font_size = `2rem`;
+export let h1_font_size = `1.5rem`;
+export let h2_font_size = `1.25rem`;
+export let h3_font_size = `1.125rem`;
+export let normal_font_size = `.938rem`;
+export let small_font_size = `.813rem`;
+export let smaller_font_size = `.75rem`;
+
+const width = window.innerWidth;
+if(width > 968) {
+  big_font_size = '3rem';
+  h1_font_size = '2.25rem';
+  h2_font_size = '1.5rem';
+  h3_font_size = '1.25rem'
+  normal_font_size = '1rem';
+  small_font_size = '.875rem';
+  smaller_font_size = '.813rem';
+}
 
 /*========== Font weight ==========*/
 export const font_medium = 500;
