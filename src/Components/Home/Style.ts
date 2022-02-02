@@ -86,10 +86,12 @@ export const HomeSocial = Styled.div`
 `;
 
 export const HomeImg = Styled.div`
+  border: 1px solid red;
   svg {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     transition: .8s;
+    
   }
 
   @media screen and (min-width: 568px) {
@@ -104,8 +106,8 @@ export const HomeImg = Styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    width: 400px;
-    height: 400px;
+    width: 370px;
+    height: 370px;
 
     svg {
     width: 350px;
