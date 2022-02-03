@@ -41,7 +41,8 @@ export const PortfolioContainer = Styled.div`
 
 export const PortfolioContent = Styled.div`
   width: 85%;
-  height: 350px;
+  height: 400px;
+  
   padding-bottom: ${mb_1_5};
   background-color: ${container_color};
   margin: 1rem;
@@ -53,8 +54,13 @@ export const PortfolioContent = Styled.div`
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: 378px) {
+    height: 500px;
+  }
+
   @media screen and (min-width: 568px) {
     width: 250px;
+    height: 350px;
   }
 `;
 
