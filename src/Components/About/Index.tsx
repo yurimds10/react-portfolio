@@ -12,16 +12,19 @@ import {
 export default function About() {
   return (
     <AboutSection id="about">
-      <Title>About Me</Title>
-      <Subtitle>My Introduction</Subtitle>
+      <Title>Sobre Mim</Title>
+      <Subtitle>Minha Introdução</Subtitle>
       <AboutContainer>
         <AboutData>
           <p>
-            I'm a developer who likes to create and take ideas from paper since the beginning of 2021, I'm very curious about technology, I like to share knowledge and help people, I like to work in a team and I always try to deliver a great work and performance.
+            Sou um desenvolvedor que gosta de criar e tirar ideias do papel desde o início de 2021, sou muito curioso sobre tecnologia, gosto de compartilhar conhecimento e ajudar pessoas, gosto de trabalhar em equipe e sempre procuro entregar um ótimo trabalho e desempenho.
           </p>
 
           <AboutButtons>
-            <a href="/public/Currículo.pdf" download>Download Cv <i className="uil uil-download-alt"></i></a>
+            <a href="/public/Currículo.pdf" download>
+              Download Cv
+              <i className="uil uil-download-alt"></i>
+            </a>
           </AboutButtons>
         </AboutData>
       </AboutContainer>

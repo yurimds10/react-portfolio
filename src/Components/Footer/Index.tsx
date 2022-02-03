@@ -21,15 +21,15 @@ export default function Footer() {
 
           <FooterLinks>
             <li>
-              <a href="#portfolio">Portfolio</a>
+              <a href="#home">Home</a>
             </li>
 
             <li>
-              <a href="#contact">Services</a>
+              <a href="#portfolio">Portfólio</a>
             </li>
 
             <li>
-              <a href="#contact">Contact Me</a>
+              <a href="#contact">Contato</a>
             </li>
           </FooterLinks>
 
@@ -48,7 +48,7 @@ export default function Footer() {
           </FooterSocials>
         </FooterContainer>
 
-        <FooterCopy>&#169; Yuri Mendes. All right reserved</FooterCopy>
+        <FooterCopy>&#169; Yuri Mendes. Todos os diretos reservados</FooterCopy>
       </FooterBackground>
     </FooterSection>
   );

@@ -13,8 +13,8 @@ import{
 export default function Skills() {
   return (
     <SkillsSection id="skills">
-      <Title>Skills</Title>
-      <Subtitle>My technical level</Subtitle>
+      <Title>habilidades</Title>
+      <Subtitle>Meu nível técnico</Subtitle>
       <SkillsContainer>
         
         <SkillDiv><SkillIcon className="devicon-html5-plain colored"></SkillIcon></SkillDiv>

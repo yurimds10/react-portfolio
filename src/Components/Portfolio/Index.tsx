@@ -18,8 +18,8 @@ import { Button } from '../Button/Button';
 export default function Portfolio() {
   return (
     <PortfolioSection id="portfolio">
-      <Title>Portfolio</Title>
-      <Subtitle>Most recent work</Subtitle>
+      <Title>Portfólio</Title>
+      <Subtitle>Meus trabalhos recentes</Subtitle>
 
       <PortfolioContainer>
         <PortfolioContent>
