@@ -28,15 +28,20 @@ export const PortfolioContainer = Styled.div`
   flex-direction: column;
   overflow: initial;
 
-  @media (min-width: 768px) {
+  @media (min-width: 568px) {
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1028px) {
+    flex-wrap: nowrap;
   }
 `;
 
 export const PortfolioContent = Styled.div`
-  width: 240px;
-  height: 350px;
+  width: 85%;
+  padding-bottom: ${mb_1_5};
   background-color: ${container_color};
   margin: 1rem;
   
@@ -48,6 +53,10 @@ export const PortfolioContent = Styled.div`
 
   :hover {
     border: 1px solid ${first_color};
+  }
+
+  @media screen and (min-width: 568px) {
+    width: 250px;
   }
 `;
 
@@ -64,7 +73,7 @@ export const PortfolioContentTitle = Styled.h2`
 
 export const PortfolioContentDescription = Styled.p`
   text-align: center;
-  padding: 0 .25rem;
+  padding: 0 1rem;
   margin-top: ${mb_0_75};
   margin-bottom: ${mb_1_5};
   font-size: ${small_font_size};

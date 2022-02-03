@@ -72,13 +72,9 @@ export const ContactInformation = Styled.div`
   }
 `;
 
-export const ContactForm = Styled.form`
+export const ContactForm = Styled.form``;
 
-`;
-
-export const ContactInputs = Styled.div`
-  
-`;
+export const ContactInputs = Styled.div``;
 
 export const ContactContent = Styled.div`
   background-color: ${input_color};

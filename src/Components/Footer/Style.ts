@@ -4,6 +4,7 @@ import {
   bigger_small_font_size,
   first_color,
   first_color_lighter,
+  font_medium,
   h1_font_size,
   mb_0_25,
   mb_1,

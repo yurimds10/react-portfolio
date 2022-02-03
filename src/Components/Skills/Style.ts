@@ -21,7 +21,7 @@ export const SkillsContainer = Styled.div`
   margin-left: ${mb_1_5};
   margin-right: ${mb_1_5};
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   
   @media screen and (max-width: 330px) {
@@ -39,9 +39,7 @@ export const SkillsContainer = Styled.div`
   }
 `;
 
-export const SkillsContent = Styled.div`
-  
-`;
+export const SkillsContent = Styled.div``;
 
 export const SkillDiv = Styled.div`
   width: 100px;
@@ -72,8 +70,6 @@ export const SkillDiv = Styled.div`
 
 export const SkillIcon = Styled.i`
   font-size: 3rem;
-
-  
 
   @media screen and (min-width: 768px) {
     font-size: 4rem;

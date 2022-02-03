@@ -19,7 +19,6 @@ export default function App():JSX.Element {
         <Home/>
         <About/>
         <Skills/>
-        <Services/>
         <Portfolio/>
         <Contact/>
       </main>
