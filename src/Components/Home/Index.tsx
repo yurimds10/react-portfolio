@@ -38,24 +38,16 @@ export default function Home() {
           </HomeImg>
 
           <HomeData>
-            <HomeTitle>Hi, I'am Yuri!</HomeTitle>
+            <HomeTitle>Olá, Yuri aqui!</HomeTitle>
             <HomeSubtitle>Front-end Developer</HomeSubtitle>
             <HomeDescription>
-              High level experience in web design and development knowledge, producing quality work.
+              Estudante de Desenvolvimento Web e apaixonado por Tecnologia.
             </HomeDescription>
             <HomeButton href="#contact">
-              Contact Me <i className="uil uil-message"/>
+              Contato <i className="uil uil-message"/>
             </HomeButton>
           </HomeData>
         </HomeContent>
-
-        <HomeScroll>
-          <HomeScrollButton>
-            <i className="uil uil-mouse-alt mouse"></i>
-            <span>Scroll down</span>
-            <i className="uil uil-arrow-down arrow"></i>
-          </HomeScrollButton>
-        </HomeScroll>
       </HomeContainer>
     </HomeSection>
   )

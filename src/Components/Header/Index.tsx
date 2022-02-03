@@ -34,28 +34,28 @@ export default function Header(): JSX.Element {
             <li>
               <NavLink href="#about">
                 <NavIcon className="uil uil-user"/>
-                 About
+                 Sobre
               </NavLink>
             </li>
 
             <li>
               <NavLink href="#skills">
                 <NavIcon className="uil uil-file"/>
-                Skills
+                Habilidades
               </NavLink>
             </li>
 
             <li>
               <NavLink href="#portfolio">
                 <NavIcon className="uil uil-scenery"/>
-                Portfolio
+                Portfólio
               </NavLink>
             </li>
 
             <li>
               <NavLink href="#contact">
                 <NavIcon className="uil uil-message"/>
-                Contact Me
+                Contato
               </NavLink>
             </li>
           </NavList>
