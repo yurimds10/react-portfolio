@@ -13,7 +13,7 @@ import {
   HomeScrollButton,
 } from './Style';
 
-import Img from '../../Assets/Img/home_image.svg';
+import {ReactComponent as Img} from '../../Assets/Img/home_image.svg';
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
             </a>
           </HomeSocial>
           <HomeImg>
-            <img src={Img} alt="home" />
+            <Img/>
           </HomeImg>
 
           <HomeData>

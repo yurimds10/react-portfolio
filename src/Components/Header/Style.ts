@@ -24,11 +24,13 @@ export const HeaderSection = Styled.header`
   left: 0;
   z-index: ${z_fixed};
   background-color: ${body_color};
+  border: 1px solid red;
 
   @media (min-width: 768px) {
     top: 0;
     bottom: initial;
     padding: 0 1rem;
+    
   }
 
   @media (min-width: 1024px) {

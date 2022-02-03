@@ -22,7 +22,8 @@
   },
   "include": [
     "src/index.tsx",
+    "src/Assets/*.svg",
     "src/components",
-    "src/custom.d.ts"
+    "custom.d.ts"
   ]
 }

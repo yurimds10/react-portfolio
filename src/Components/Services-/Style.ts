@@ -3,13 +3,11 @@ import {
   container_color,
   first_color,
   font_medium,
-  h1_font_size,
   h3_font_size,
   mb_0_25,
   mb_0_50,
   mb_1,
   mb_1_5,
-  mb_3,
   small_font_size,
   z_modal,
 } from '../../Styles/Variables';
