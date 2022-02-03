@@ -28,25 +28,18 @@ export default function Portfolio() {
           <PortfolioContentDescription>
             Esse site foi desenvolvido pensando em você deseja ter mais foco usando a tecnica Promodoro!
           </PortfolioContentDescription>
-          <Button>Click to see the Project</Button>
+          <Button>
+            Demo
+            <i className="uil uil-arrow-right"/>
+          </Button>
         </PortfolioContent>
 
         <PortfolioContent>
-          <PortfolioImg src={PromodoroImg}/>
-          <PortfolioContentTitle>Promodoro Timer App</PortfolioContentTitle>
-          <PortfolioContentDescription>
-            Esse site foi desenvolvido pensando em você deseja ter mais foco usando a tecnica Promodoro!
-          </PortfolioContentDescription>
-          <Button>Click to see the Project</Button>
+          <p className="description">Em Breve!</p>
         </PortfolioContent>
 
         <PortfolioContent>
-          <PortfolioImg src={PromodoroImg}/>
-          <PortfolioContentTitle>Promodoro Timer App</PortfolioContentTitle>
-          <PortfolioContentDescription>
-            Esse site foi desenvolvido pensando em você deseja ter mais foco usando a tecnica Promodoro!
-          </PortfolioContentDescription>
-          <Button>Click to see the Project</Button>
+          <p className="description">Em Breve!</p>
         </PortfolioContent>
       </PortfolioContainer>
     </PortfolioSection>

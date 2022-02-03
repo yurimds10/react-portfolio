@@ -41,6 +41,7 @@ export const PortfolioContainer = Styled.div`
 
 export const PortfolioContent = Styled.div`
   width: 85%;
+  height: 350px;
   padding-bottom: ${mb_1_5};
   background-color: ${container_color};
   margin: 1rem;
@@ -50,10 +51,7 @@ export const PortfolioContent = Styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  :hover {
-    border: 1px solid ${first_color};
-  }
+  justify-content: center;
 
   @media screen and (min-width: 568px) {
     width: 250px;

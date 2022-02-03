@@ -89,8 +89,8 @@ export const HomeSocial = Styled.div`
 
 export const HomeImg = Styled.div`
   svg {
-    width: 200px;
-    height: 200px;
+    width: 270px;
+    height: 270px;
     transition: .8s;
     
   }
@@ -107,20 +107,20 @@ export const HomeImg = Styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    width: 400px;
-    height: 400px;
+    width: 470px;
+    height: 470px;
 
     svg {
-    width: 350px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     transition: .8s;
     }
 
     :hover {
       svg {
         transition: .8s;
-        width: 370px;
-        height: 310px;
+        width: 470px;
+        height: 470px;
         transition: .8s;
       }
     }

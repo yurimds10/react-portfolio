@@ -46,13 +46,6 @@ export default function Header(): JSX.Element {
             </li>
 
             <li>
-              <NavLink href="#services">
-                <NavIcon className="uil uil-file"/>
-                Services
-              </NavLink>
-            </li>
-
-            <li>
               <NavLink href="#portfolio">
                 <NavIcon className="uil uil-scenery"/>
                 Portfolio
