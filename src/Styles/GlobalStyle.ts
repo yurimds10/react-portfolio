@@ -7,7 +7,6 @@ import {
   text_color,
   title_color,
   font_semi_bold,
-
   first_color,
   first_color_alt,
 } from "./Variables";
